@@ -1,0 +1,109 @@
+@auth
+    @if (Auth::user()->role === 'school')
+        <!-- Sidebar -->
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light"
+            style="">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <span class="fs-4">School Panel</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto" id="student-sidebar">
+                <li class="nav-item">
+                    <a href="{{ url('/school/dashboard') }}" class="nav-link">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('courses.create') }}" class="nav-link">
+                        My Courses
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.students') }}" class="nav-link">
+                        Students
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.courses.manage') }}" class="nav-link">
+                        Badges
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.live-classes.index') }}" class="nav-link">
+                        Live Class
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.chat-room') }}" class="nav-link">
+                        Chat Room
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.assets') }}" class="nav-link">
+                        Assets
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.assignments.index') }}" class="nav-link">
+                        Assignments
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="{{ route('school.submissions.index') }}" class="nav-link">
+                        Results
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('certificates') }}" class="nav-link">
+                        Certificates
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('communities') }}" class="nav-link">
+                        Communities
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('school.profile.picture') }}" class="nav-link">
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/settings') }}" class="nav-link">
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('logout') }}"
+                    class="nav-link text-danger"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const sidebarLinks = document.querySelectorAll('#student-sidebar .nav-link');
+                const currentUrl = window.location.href;
+
+                sidebarLinks.forEach(link => {
+                    if (currentUrl === link.href || currentUrl.startsWith(link.href)) {
+                        link.classList.add('active');
+                        link.classList.remove('text-dark');
+                    } else {
+                        link.classList.remove('active');
+                        if (!link.classList.contains('text-danger')) {
+                            link.classList.add('text-dark');
+                        }
+                    }
+                });
+            });
+        </script>
+    @endif
+@endauth
