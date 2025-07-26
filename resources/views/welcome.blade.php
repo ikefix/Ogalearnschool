@@ -9,6 +9,8 @@
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
 
         <!-- Styles -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
@@ -65,7 +67,7 @@
             </section>
 
             
-            <div class="body">
+            {{-- <div class="body">
                 <div class="body-content">
                     <div class="bod-img">
                         <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="A Lady Veiwing Content On Her Device">
@@ -77,7 +79,27 @@
                         <div class="read"><a href="/Ogalearn-Project/Navbar/About/About.php"><button>Read More On <i>Ogalearn</i></button></a></div>
                     </div>
                 </div>
+            </div> --}}
+            
+            <div class="about">
+                <div class="about-content">
+                    <div class="about-img">
+                        <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="">
+                    </div>
+                    <div class="about-text">
+                        <div class="hold1"><h3 class="h2">About Us</h3></div>
+                        <div class="hold2"><h2>We Care About The Quality Of Knowledge That Is Being Inculcated To Our Students.</h2></div>
+                        <div class="about-button">
+                            <div class="but1"><a href=""><button>OUR GOAL</button></a></div>
+                            <div class="but2"><a href=""><button>OUR VISION</button></a></div>
+                            <div class="but3"><a href=""><button>OUR MISSION</button></a></div>
+                        </div>
+                        <div class="but4"><p>Our goal is to produce over 10,000 quality Tallent that will dominate Africa and beyond by 2030 </p></div>
+                        <div class="explore"><a href="#course-scroll"><button>Explore Our Courses</button></a></div>
+                    </div>
+                </div>
             </div>
+
             <div class="join">
                 <div class="join-content">
                     <div class="join-tent1">
@@ -137,24 +159,6 @@
                     </div>
                 </div>
             </div>
-            <div class="about">
-                <div class="about-content">
-                    <div class="about-img">
-                        <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="">
-                    </div>
-                    <div class="about-text">
-                        <div class="hold1"><h3 class="h2">About Us</h3></div>
-                        <div class="hold2"><h2>We Care About The Quality Of Knowledge That Is Being Inculcated To Our Students.</h2></div>
-                        <div class="about-button">
-                            <div class="but1"><a href=""><button>OUR GOAL</button></a></div>
-                            <div class="but2"><a href=""><button>OUR VISION</button></a></div>
-                            <div class="but3"><a href=""><button>OUR MISSION</button></a></div>
-                        </div>
-                        <div class="but4"><p>Our goal is to produce over 10,000 quality Tallent that will dominate Africa and beyond by 2030 </p></div>
-                        <div class="explore"><a href="#course-scroll"><button>Explore Our Courses</button></a></div>
-                    </div>
-                </div>
-            </div>
 
             <div class="choose">
                 <div class="choose-content">
@@ -184,14 +188,14 @@
                             <p class="otp">The OTP is a randomly generated code that is sent to your phone or email. You will need to enter this code in order to confirm your transaction.</p>
                         </div>
                         <div class="learn">
-                            <a href="/Navbar/Learn/Learn.html">
+                            <a href="">
                                 <button>Learn With <i>Ogalearn</i></button>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="about-img3">
-                    <img src="{{ asset('ThoughtLeadership-manontrain-1024x683.jpg') }}" alt="">
+                    <img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="">
                 </div>
             </div>
 
@@ -205,36 +209,36 @@
                     <div class="course-menu">
                         <div class="cou-menu">
                             <div class="cou-men-flex">
-                                <a href="/Ogalearn-check.php">
+                                <a>
                                     <div>
                                         <div class="cou-menu-con">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('WhatsApp Image 2024-03-23 at 9.47.58 AM (2).jpg') }}" alt="Image"></div>
                                             <div class="course-topic">
-                                                <h3 class="topy">Data Analysis</h3>
+                                                <h3 class="topy">Summer Holiday Training</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
                                                 <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="/Ogalearn-check.php">
+                                <a>
                                     <div>
                                         <div class="cou-menu-cen">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('WhatsApp Image 2025-07-18 at 10.22.18.jpeg') }}" alt="Image"></div>
                                             <div class="course-topic">
-                                                <h3 class="topy">UI/UX Design</h3>
+                                                <h3 class="topy">Data Analytics</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
                                                 <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="/Ogalearn-check.php">
+                                <a>
                                     <div>
                                         <div class="cou-menu-can">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="Image"></div>
                                             <div class="course-topic">
-                                                <h3 class="topy">Graphics Design</h3>
+                                                <h3 class="topy">Digital Marketing</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
                                                 <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                             </div>
@@ -242,8 +246,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="cou-men-flex">
-                                <a href="/Ogalearn-check.php">
+                            {{-- <div class="cou-men-flex">
+                                <a>
                                     <div>
                                         <div class="cou-menu-con">
                                             <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
@@ -255,12 +259,12 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="/Ogalearn-check.php">
+                                <a>
                                     <div>
                                         <div class="cou-menu-cen">
                                             <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
                                             <div class="course-topic">
-                                                <h3 class="topy">UI/UX Design</h3>
+                                                <h3 class="topy">Graphics Design</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
                                                 <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                             </div>
@@ -279,7 +283,7 @@
                                         </div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> --}}
 
                             <!-- 👇 HIDDEN by default -->
                             <div id="comen-more">
@@ -364,7 +368,7 @@
                         <!-- 👇 SHOW MORE BUTTON -->
                             <div class="more-course">
                                 <a class="shomo" id="shomo">
-                                    <button id="shomo-button">Show More</button>
+                                    {{-- <button id="shomo-button">Show More</button> --}}
                                 </a>
                             </div>
                     </div>
@@ -384,7 +388,15 @@
                             <div class="service-tent-con">
                                 <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
                                 <div class="service-topic">
-                                    <h3 class="topy">Web Design</h3>
+                                    <h3 class="topy">Web & Mobile App Development</h3>
+                                    <h2 class="noty">We Develop Websites</h2>
+                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                </div>
+                            </div>
+                            <div class="service-tent-con">
+                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                <div class="service-topic">
+                                    <h3 class="topy">Graphics Design</h3>
                                     <h2 class="noty">We Design Websites</h2>
                                     <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                 </div>
@@ -392,45 +404,30 @@
                             <div class="service-tent-con">
                                 <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
                                 <div class="service-topic">
-                                    <h3 class="topy">Digital Marketing</h3>
+                                    <h3 class="topy">Sales & Repairs Of Gadgets</h3>
                                     <h2 class="noty">We Marketise Digitally </h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Web Development</h3>
-                                    <h2 class="noty">We Develop And Create Website</h2>
                                     <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="ser-tent">
+                        {{-- <div class="ser-tent">
                             <div class="service-tent-con">
                                 <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
                                 <div class="service-topic">
-                                    <h3 class="topy">Web Design</h3>
+                                    <h3 class="topy">Graphics Design</h3>
                                     <h2 class="noty">We Design Websites</h2>
                                     <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                 </div>
-                            </div>
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Digital Marketing</h3>
-                                    <h2 class="noty">We Marketise Digitally </h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                            <div class="service-tent-con">
+                            </div> --}}
+                            
+                            {{-- <div class="service-tent-con">
                                 <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
                                 <div class="service-topic">
                                     <h3 class="topy">Web Development</h3>
                                     <h2 class="noty">We Develop And Create Website</h2>
                                     <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="ser-tent sert">
                             <div class="service-tent-con">
@@ -460,16 +457,49 @@
                         </div>
                     </div>
                     <div class="service-button">
-                        <button id="view-more-btn">View More Services</button>
+                        {{-- <button id="view-more-btn">View More Services</button> --}}
                     </div>
                 </div>
             </div>
+
+<section class="image-slider-section py-4">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="Image 1" class="carousel-img">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('WhatsApp Image 2023-12-29 at 5.42.27 AM (2).jpg') }}" alt="Image 2" class="carousel-img">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (2).jpeg') }}" alt="Image 3" class="carousel-img">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('WhatsApp Image 2025-07-18 at 10.22.18.jpeg') }}" alt="Image 4" class="carousel-img">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('WhatsApp Image 2024-03-23 at 9.47.58 AM (2).jpg') }}" alt="Image 5" class="carousel-img">
+            </div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination dots -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+
+
             <div>
                 <div class="job">
                     <div class="job-content">
                         <div class="center">
                             <h3 class="course-head">Jobs</h3>
-                            <h2 class="offer">Our Recent Projects</h2>
+                            <h2 class="offer">Our Student Projects</h2>
                         </div>
                         <div class="course-menu">
                             <div class="cou-menu">
@@ -516,7 +546,7 @@
             
                 <div id="popup1" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Wills</h1>
@@ -532,7 +562,7 @@
                 </div>
                 <div id="popup2" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Sonia</h1>
@@ -548,7 +578,7 @@
                 </div>
                 <div id="popup3" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Henschel</h1>
@@ -654,7 +684,7 @@
         </script> --}}
         </div>
 
-            <script>
+            {{-- <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const showMoreBtn = document.getElementById("shomo-button");
                     const extraCourses = document.getElementById("comen-more");
@@ -672,7 +702,7 @@
                         }
                     });
                 });
-            </script>
+            </script> --}}
 
             <script>
                 window.addEventListener("scroll", function () {
@@ -685,7 +715,7 @@
                 });
             </script>
 
-            <script>
+            {{-- <script>
                 document.addEventListener("DOMContentLoaded", function () {
                     const viewMoreBtn = document.getElementById("view-more-btn");
                     const extraServices = document.querySelector(".sert");
@@ -697,7 +727,7 @@
                         viewMoreBtn.textContent = isVisible ? "View Less Services" : "View More Services";
                     });
                 });
-            </script>
+            </script> --}}
             <script>
             const images = document.querySelectorAll('.job-img');
             const popups = document.querySelectorAll('.popup-content');
@@ -723,5 +753,37 @@
                 overlay.style.display = 'none';
             });
         </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      992: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+
+
     </body>
 </html>

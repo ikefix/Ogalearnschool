@@ -19,19 +19,13 @@
                         @guest
                         <div class="navbar-nav ms-auto navbar-div">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Home</a>
+                                <a class="nav-link" href="">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Home</a>
+                                <a class="nav-link" href="">Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Home</a>
+                                <a class="nav-link" href="">Blog</a>
                             </li>
                         </div>
                             @if (Route::has('login'))
