@@ -52,7 +52,7 @@
                 @include("includes.nav1")
                 <div class="hero-container">
                     <div class="hero-text">
-                        <h1>Empower Your Future Through Learning</h1>
+                        <h1>Empower Your Future Thr1ough Learning</h1>
                         <p>Learn high-demand skills from top instructors in tech, business, design & more.</p>
                         <div class="hero-buttons">
                             {{-- <a href="{{ route('courses.index') }}" class="btn primary">📚 Browse Courses</a> --}}
