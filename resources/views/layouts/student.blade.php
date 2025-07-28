@@ -21,69 +21,7 @@
             margin: 0;
             padding-left: 250px; /* Match sidebar width */
         }
-        .sidebar {
-            width: 250px;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            background-color: #f8f9fa;
-            padding: 1rem;
-            overflow-y: auto;
-        }
     </style>
-
-<style>
-    .sturborn {
-        max-width: 100%;
-        padding: 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.8;
-        font-size: 16px;
-        color: #333;
-    }
-
-    .sturborn h2,
-    .sturborn h3,
-    .sturborn h4 {
-        margin-top: 1.5rem;
-        color: #1d3557;
-    }
-
-    .sturborn p {
-        margin-bottom: 1.2rem;
-    }
-
-    .sturborn img {
-        max-width: 100%;
-        height: auto !important;
-        border-radius: 10px;
-        display: block;
-        margin: 1.5rem auto;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .sturborn ul,
-    .sturborn ol {
-        margin: 1rem 0;
-        padding-left: 1.5rem;
-    }
-
-    .sturborn iframe {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1rem auto;
-    }
-
-    .sturborn blockquote {
-        border-left: 4px solid #3498db;
-        padding-left: 1rem;
-        color: #555;
-        margin: 1.5rem 0;
-        background-color: #f7f9fa;
-    }
-</style>
 
     
 </head>
@@ -128,8 +66,13 @@
             </a>
         </div>
 
+            <!-- Toggle Button for Mobile -->
+            <button class="sidebar-menu" id="sidebarToggle">
+                ☰
+            </button>
+
         {{-- Student Sidebar --}}
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             @include('includes.student-side-nav')
         </div>
 
@@ -141,5 +84,16 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-visible');
+        });
+    });
+</script>
 </body>
 </html>

@@ -37,6 +37,28 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
+
+Route::get('/learn-with-ogalearn', function () {
+    if (auth()->check()) {
+        $user = auth()->user();
+
+        // Redirect based on role (optional logic)
+        if ($user->role === 'student') {
+            return redirect('/student/dashboard');
+        } elseif ($user->role === 'school') {
+            return redirect('/school/dashboard');
+        }
+
+        // Default fallback
+        return redirect('/dashboard');
+    }
+
+    return redirect('/login');
+})->name('learn.with.ogalearn');
+
+
+
+
 // ROUTES FOR DASHBOARDS
 Route::get('/student/dashboard', function () {
     return view('student.dashboard');

@@ -49,10 +49,19 @@ class RegisterController extends Controller
         ]);
     }
 
-    public function showRegistrationForm()
+
+public function showRegistrationForm()
 {
-    $schools = User::where('role', 'school')->get();
-    return view('auth.register', compact('schools'));
+    // Fetch the specific school by name (or you could fetch by ID if preferred)
+    $school = User::where('role', 'school')
+                  ->where('school_name', 'Ogalearn')
+                  ->select('id', 'school_name')
+                  ->firstOrFail();
+
+    return view('auth.register', compact('school'));
 }
+
+
+
 }
 // This controller handles the registration of students, validating their input and creating a new user in the database.

@@ -1,5 +1,5 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 250px; height: 100vh; position: fixed;">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light sidebar-sturborn-thing" style="width: 250px; height: 100vh; position: fixed;">
+    <a href="{{ url('/') }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
         <span class="fs-4">Student Panel</span>
     </a>
     <hr>

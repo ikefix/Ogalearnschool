@@ -56,18 +56,28 @@
 
                         {{-- SCHOOL (with search using Select2) --}}
                         {{-- SCHOOL AUTOCOMPLETE INPUT --}}
-<div class="row mb-3">
+{{-- <div class="row mb-3">
     <label for="school_name" class="col-md-4 col-form-label text-md-end">{{ __('School Name') }}</label>
     <div class="col-md-6">
         <input id="school_name" type="text"
             class="form-control @error('school_name') is-invalid @enderror"
             name="school_name" value="{{ old('school_name') }}" required autocomplete="off">
-        <input type="hidden" name="school_id" id="school_id"> {{-- hidden field for actual ID --}}
+        <input type="hidden" name="school_id" id="school_id"> hidden field for actual ID
         @error('school_name')
             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
         @enderror
+    </div>`
+</div> --}}
+
+
+<div class="row mb-3">
+    <label class="col-md-4 col-form-label text-md-end">{{ __('School Name') }}</label>
+    <div class="col-md-6">
+        <input type="text" class="form-control" value="{{ $school->school_name }}" readonly>
+        <input type="hidden" name="school_id" value="{{ $school->id }}">
     </div>
 </div>
+
 
 
                         {{-- PASSWORD --}}
@@ -108,12 +118,13 @@
 </div>
 
     <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 
     <script>
-        const schools = @json($schools->map(fn($s) => ['id' => $s->id, 'label' => $s->name]));
+        const schools = @json($schools->map(fn($s) => ['id' => $s->id, 'label' => $s->school_name]));
+
 
         $(function () {
             $('#school_name').autocomplete({
@@ -123,7 +134,7 @@
                 }
             });
         });
-    </script>
+    </script> --}}
 @endsection
 
 

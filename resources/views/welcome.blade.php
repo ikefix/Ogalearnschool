@@ -56,8 +56,8 @@
                         <p>Learn high-demand skills from top instructors in tech, business, design & more.</p>
                         <div class="hero-buttons">
                             {{-- <a href="{{ route('courses.index') }}" class="btn primary">📚 Browse Courses</a> --}}
-                            <a href="{{ route('register.school') }}" class="btn primary">Register As A School</a>
-                            <a href="{{ route('register') }}" class="btn secondary">🚀 Start Learning Free</a>
+                            <a href="{{ route('register.school') }}" class="btn primary">Register(For School)</a>
+                            <a href="{{ route('register') }}" class="btn secondary">🚀 Start Learning</a>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -188,9 +188,10 @@
                             <p class="otp">The OTP is a randomly generated code that is sent to your phone or email. You will need to enter this code in order to confirm your transaction.</p>
                         </div>
                         <div class="learn">
-                            <a href="">
+                            <a href="{{ route('learn.with.ogalearn') }}">
                                 <button>Learn With <i>Ogalearn</i></button>
                             </a>
+
                         </div>
                     </div>
                 </div>
