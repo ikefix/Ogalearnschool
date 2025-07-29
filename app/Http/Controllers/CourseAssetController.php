@@ -77,7 +77,10 @@ public function store(Request $request, Course $course)
 // Show only courses that have assets
 public function studentIndex()
 {
-    $courses = \App\Models\Course::has('assets')->get(); // Only get courses that actually have assets
+    $user = auth()->user();
+
+    // Only show courses the student is subscribed to and that have assets
+    $courses = $user->subscribedCourses()->has('assets')->get();
 
     return view('student.asset_courses', compact('courses'));
 }
@@ -85,10 +88,18 @@ public function studentIndex()
 // Show all assets under a selected course
 public function studentView(Course $course)
 {
+    $user = auth()->user();
+
+    // Check if the user is subscribed to the course
+    if (!$user->subscribedCourses->contains($course->id)) {
+        abort(403, 'You are not subscribed to this course.');
+    }
+
     $assets = $course->assets;
 
     return view('student.asset_list', compact('course', 'assets'));
 }
+
 
 
 

@@ -13,19 +13,28 @@ public function index()
 {
     $student = auth()->user();
 
-    // Fetch assignments where the course belongs to the student's school
+    // Only fetch assignments from courses the student is subscribed to
     $assignments = Assignment::whereHas('course', function ($query) use ($student) {
-        $query->where('school_id', $student->school_id);
+        $query->whereIn('id', $student->subscribedCourses->pluck('id'));
     })->with('course')->get();
 
     return view('student.assignments.index', compact('assignments'));
 }
 
 
-    public function show(Assignment $assignment)
-    {
-        return view('student.assignments.show', compact('assignment'));
+
+public function show(Assignment $assignment)
+{
+    $student = auth()->user();
+
+    // Block access if the user isn't subscribed to the course this assignment belongs to
+    if (!$student->subscribedCourses->contains($assignment->course_id)) {
+        abort(403, 'You are not subscribed to the course for this assignment.');
     }
+
+    return view('student.assignments.show', compact('assignment'));
+}
+
 
 public function submit(Request $request, Assignment $assignment)
 {

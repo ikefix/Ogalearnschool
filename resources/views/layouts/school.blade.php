@@ -74,8 +74,13 @@
             </a>
         </div>
 
+        
+            <!-- Toggle Button for Mobile -->
+            <button class="sidebar-menu" id="sidebarToggle">
+                ☰
+            </button>
 
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             @include("includes.school-side-nav")
         </div>
 
@@ -86,6 +91,17 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('sidebarToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('sidebar-visible');
+        });
+    });
+</script>
 </body>
 </html>
 

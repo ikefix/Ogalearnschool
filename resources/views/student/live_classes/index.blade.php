@@ -6,7 +6,7 @@
 
     @if($liveClasses->isEmpty())
         <div class="alert alert-warning text-center">
-            😕 No live classes are currently available. Please check back later!
+            😕 You have no active live classes. Please subscribe to a course with live sessions.
         </div>
     @else
         <div class="row justify-content-center">

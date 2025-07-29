@@ -23,7 +23,7 @@ class User extends Authenticatable
         'role',         // school, student, admin, super admin
         'school_name',  // for schools only
         'address',      // for schools
-        'phone_number',        // for schools
+        'phone_number', // for schools
         'gender',       // for students
         'school_id',    // for students (foreign key reference to school)
     ];
@@ -64,17 +64,43 @@ class User extends Authenticatable
     }
 
     public function courses()
+    {
+        return $this->hasMany(Course::class, 'school_id');
+    }
+
+    public function subscribedCourses()
 {
-    return $this->hasMany(Course::class, 'school_id');
+    return $this->belongsToMany(Course::class, 'subscriptions', 'user_id', 'course_id')->withTimestamps();
 }
 
-public function liveClasses()
+
+    public function liveClasses()
+    {
+        return $this->hasMany(LiveClass::class, 'school_id');
+    }
+
+    public function submissions()
+    {
+        return $this->hasMany(Submission::class, 'student_id');
+    }
+
+    public function subscriptions()
 {
-    return $this->hasMany(LiveClass::class, 'school_id');
+    return $this->belongsToMany(Course::class, 'subscriptions', 'user_id', 'course_id')->withTimestamps();
 }
 
-public function submissions() {
-    return $this->hasMany(Submission::class, 'student_id');
-}
+    public function hasActiveSubscription()
+    {
+        return $this->subscription &&
+               $this->subscription->ends_at->isFuture();
+    }
+
+    /**
+     * Courses the student has enrolled in
+     */
+    public function enrolledCourses()
+    {
+        return $this->belongsToMany(Course::class, 'course_enrollments')->withTimestamps();
+    }
 
 }

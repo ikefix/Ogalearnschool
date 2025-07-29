@@ -1,8 +1,7 @@
 @auth
     @if (Auth::user()->role === 'school')
         <!-- Sidebar -->
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light"
-            style="">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sidebar-sturborn-thing" style="width: 250px; height: 100vh;">
             <a href="{{ url('/') }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
                 <span class="fs-4">School Panel</span>
             </a>
@@ -88,22 +87,22 @@
         </div>
 
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const sidebarLinks = document.querySelectorAll('#student-sidebar .nav-link');
-                const currentUrl = window.location.href;
+    document.addEventListener('DOMContentLoaded', function () {
+        const sidebarLinks = document.querySelectorAll('#student-sidebar .nav-link');
+        const currentUrl = window.location.href;
 
-                sidebarLinks.forEach(link => {
-                    if (currentUrl === link.href || currentUrl.startsWith(link.href)) {
-                        link.classList.add('active');
-                        link.classList.remove('text-dark');
-                    } else {
-                        link.classList.remove('active');
-                        if (!link.classList.contains('text-danger')) {
-                            link.classList.add('text-dark');
-                        }
-                    }
-                });
-            });
-        </script>
+        sidebarLinks.forEach(link => {
+            if (currentUrl === link.href || currentUrl.startsWith(link.href)) {
+                link.classList.add('active');
+                link.classList.remove('text-dark');
+            } else {
+                link.classList.remove('active');
+                if (!link.classList.contains('text-danger')) {
+                    link.classList.add('text-dark');
+                }
+            }
+        });
+    });
+</script>
     @endif
 @endauth

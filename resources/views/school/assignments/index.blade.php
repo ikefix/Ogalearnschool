@@ -25,7 +25,7 @@
                         <form action="{{ route('school.assignments.destroy', $assignment->id) }}" method="POST" onsubmit="return confirm('Delete this assignment?')">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger btn-sm">🗑️ Delete</button>
+                            <button class="btn btn-danger" style="padding: 3px 20px;">🗑️ Delete</button>
                         </form>
                     </td>
                 </tr>

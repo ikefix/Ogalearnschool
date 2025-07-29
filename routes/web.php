@@ -13,6 +13,7 @@ use App\Http\Controllers\StudentCourseController;
 use App\Http\Controllers\SchoolCourseController;
 use App\Http\Controllers\LiveClassController;
 use App\Http\Controllers\CourseAssetController;
+use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\School\SubmissionReviewController;
 
 use App\Events\EphemeralMessageEvent;
@@ -36,6 +37,21 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/subscription-required', function () {
+    return view('subscription.notice');
+})->name('subscription.notice');
+
+
+Route::middleware(['auth', 'ensure.subscribed'])->group(function () {
+    Route::get('/school/dashboard', [SchoolController::class, 'index'])->name('school.dashboard');
+});
+
+
+Route::get('/subscribe', [SubscriptionController::class, 'showSubscriptionForm'])->name('subscription.plans');
+
+Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscription.subscribe');
+
+
 
 
 Route::get('/learn-with-ogalearn', function () {
@@ -58,11 +74,62 @@ Route::get('/learn-with-ogalearn', function () {
 
 
 
+    // Dashboard
+    Route::get('/student/dashboard', function () {
+        return view('student.dashboard');
+    })->middleware(['student'])->name('student.dashboard');
 
-// ROUTES FOR DASHBOARDS
-Route::get('/student/dashboard', function () {
-    return view('student.dashboard');
-})->middleware(['auth', 'student'])->name('student.dashboard');
+    
+    Route::get('/student/courses', [StudentCourseController::class, 'index'])->name('student.courses');
+
+    
+    Route::get('/student/live-classes', [LiveClassController::class, 'studentIndex'])->name('student.live-classes.index');
+
+    Route::get('/student/assets', [CourseAssetController::class, 'studentIndex'])->name('student.assets.index');
+
+
+    Route::post('student/assignments/{assignment}/submit', [StudentAssignmentController::class, 'submit'])->name('student.assignments.submit');
+
+
+
+Route::get('student/scores', [StudentScoreController::class, 'index'])->name('student.scores.index');
+
+
+        Route::get('student/assignments', [StudentAssignmentController::class, 'index'])->name('student.assignments.index');
+
+Route::middleware(['auth', 'ensuresubscribed'])->group(function () {
+
+    Route::get('student/assignments/{assignment}', [StudentAssignmentController::class, 'show'])->name('student.assignments.show');
+
+    // Courses
+    Route::get('/student/courses/{slug}', [StudentCourseController::class, 'show'])->name('student.show');
+    Route::post('/student/courses/{id}/comment', [StudentCourseController::class, 'postComment'])->name('student.course.comment');
+
+    // Like/Unlike
+    Route::post('/student/course/{id}/like', [StudentCourseController::class, 'like'])->name('student.like.course');
+    Route::post('/student/course/{id}/unlike', [StudentCourseController::class, 'unlike'])->name('student.unlike.course');
+
+    // Chat Room
+    Route::get('/student/chat-room', function () {
+        return view('student.chat-room');
+    })->name('student.chat-room')->middleware(['student']);
+
+    // Live Class
+    Route::get('/student/live-class', function () {
+        $room = 'LiveClass_' . auth()->id() . '_' . now()->format('YmdHis');
+        return view('student.live-class', compact('room'));
+    })->middleware(['student']);
+
+    
+    // Course Assets
+    Route::get('/student/assets/{course}', [CourseAssetController::class, 'studentView'])->name('student.assets.view');
+});
+
+
+
+
+
+
 
 
 Route::get('/school/dashboard', function () {
@@ -151,8 +218,7 @@ Route::post('/ckeditor/upload', [CKEditorController::class, 'upload'])->name('ck
 
 // STUDENTS COURSE VIEW
 
-Route::get('/student/courses', [StudentCourseController::class, 'index'])->name('student.courses');
-Route::get('/student/courses/{slug}', [StudentCourseController::class, 'show'])->name('student.show');
+
 
 
 Route::get('/school/courses', [SchoolCourseController::class, 'index'])->name('school.courses');
@@ -162,7 +228,7 @@ Route::get('/school/courses/{slug}', [SchoolCourseController::class, 'show'])->n
 
 
 // FOR COMMENTS
-Route::post('/student/courses/{id}/comment', [StudentCourseController::class, 'postComment'])->name('student.course.comment');
+
 
 
 
@@ -206,9 +272,7 @@ Route::post('/courses/{id}/track-view', function ($id) {
 
 
 
-// FOR LIKE BUTTOn
-Route::post('/student/course/{id}/like', [StudentCourseController::class, 'like'])->name('student.like.course');
-Route::post('/student/course/{id}/unlike', [StudentCourseController::class, 'unlike'])->name('student.unlike.course');
+
 
 
 // ROUTE FOR LIVE CLASS
@@ -220,9 +284,7 @@ Route::post('/chat/send', function (Request $request) {
 })->name('ephemeral.send')->middleware('auth');
 
 
-Route::get('/student/chat-room', function () {
-    return view('student.chat-room');
-})->name('student.chat-room')->middleware('auth');
+
 
 
 Route::get('/school/chat-room', function () {
@@ -248,10 +310,6 @@ Route::get('/school/live-class', function () {
 });
 
 
-Route::get('/student/live-class', function () {
-    $room = 'LiveClass_' . auth()->id() . '_' . now()->format('YmdHis');
-    return view('student.live-class', compact('room'));
-});
 
 
 
@@ -266,7 +324,6 @@ Route::middleware(['auth'])->group(function () {
 
     Route::post('/live-classes/{id}/end', [LiveClassController::class, 'end'])->name('live-classes.end');
 
-    Route::get('/student/live-classes', [LiveClassController::class, 'studentIndex'])->name('student.live-classes.index');
 });
 
 
@@ -291,8 +348,7 @@ Route::post('/course-assets/store/{course}', [CourseAssetController::class, 'sto
 // STUDENTS ASSETS
 
 
-Route::get('/student/assets', [CourseAssetController::class, 'studentIndex'])->name('student.assets.index');
-Route::get('/student/assets/{course}', [CourseAssetController::class, 'studentView'])->name('student.assets.view');
+
 
 
 
@@ -318,12 +374,6 @@ Route::get('/assignments', [AssignmentController::class, 'index'])->name('school
 
 // For student (view/submit)
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('student/assignments', [StudentAssignmentController::class, 'index'])->name('student.assignments.index');
-    Route::get('student/assignments/{assignment}', [StudentAssignmentController::class, 'show'])->name('student.assignments.show');
-    Route::post('student/assignments/{assignment}/submit', [StudentAssignmentController::class, 'submit'])->name('student.assignments.submit');
-});
-
 
 
 
@@ -336,5 +386,3 @@ Route::prefix('school')->group(function () {
     Route::post('submissions/{submission}/status', [SubmissionReviewController::class, 'updateStatus'])->name('school.submissions.updateStatus');
 });
 
-
-Route::get('student/scores', [StudentScoreController::class, 'index'])->name('student.scores.index');

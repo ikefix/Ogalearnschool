@@ -12,42 +12,45 @@ return new class extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('courses', function (Blueprint $table) {
-    $table->id();
+{
+    Schema::create('courses', function (Blueprint $table) {
+        $table->id();
 
-    $table->unsignedBigInteger('school_id'); // School that owns the course
-    $table->unsignedBigInteger('author_id'); // User that created the course
+        $table->unsignedBigInteger('school_id'); // School that owns the course
+        $table->unsignedBigInteger('author_id'); // User that created the course
 
-    $table->string('title');
-    
-    // Learning sections
-    $table->text('what_youll_learn')->nullable();
-    $table->text('course_outcomes')->nullable(); // At the end of the course
-    $table->text('course_questions')->nullable(); // Optional quiz or reflection questions
+        $table->string('title');
+        
+        // Learning sections
+        $table->text('what_youll_learn')->nullable();
+        $table->text('course_outcomes')->nullable(); // At the end of the course
+        $table->text('course_questions')->nullable(); // Optional quiz or reflection questions
 
-    // Core content
-    $table->string('slug')->unique(); // SEO URL
-    $table->text('description')->nullable(); // Short meta/summary
-    $table->string('thumbnail')->nullable(); // Course cover image
-    $table->longText('content')->nullable(); // Rich course body: CKEditor-based
+        // Core content
+        $table->string('slug')->unique(); // SEO URL
+        $table->text('description')->nullable(); // Short meta/summary
+        $table->string('thumbnail')->nullable(); // Course cover image
+        $table->longText('content')->nullable(); // Rich course body: CKEditor-based
 
-    // Social metrics
-    $table->unsignedBigInteger('views')->default(0);
-    $table->unsignedBigInteger('likes')->default(0);
-    
-    // Comment system — ⚠️ Will be implemented separately in a new table (not in this one)
+        // Add end date column
+        $table->date('end_date')->nullable();
 
-    $table->enum('status', ['draft', 'published'])->default('draft');
+        // Social metrics
+        $table->unsignedBigInteger('views')->default(0);
+        $table->unsignedBigInteger('likes')->default(0);
+        
+        // Comment system — ⚠️ Will be implemented separately in a new table (not in this one)
 
-    $table->timestamps();
+        $table->enum('status', ['draft', 'published'])->default('draft');
 
-    // Foreign key constraints
-    $table->foreign('school_id')->references('id')->on('users')->onDelete('cascade');
-    $table->foreign('author_id')->references('id')->on('users')->onDelete('cascade');
-});
+        $table->timestamps();
 
-    }
+        // Foreign key constraints
+        $table->foreign('school_id')->references('id')->on('users')->onDelete('cascade');
+        $table->foreign('author_id')->references('id')->on('users')->onDelete('cascade');
+    });
+}
+
 
     /**
      * Reverse the migrations.

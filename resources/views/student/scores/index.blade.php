@@ -6,36 +6,47 @@
         📊 Assignment Scores
     </h3>
 
-    @forelse ($submissions as $submission)
-        <div class="card mb-4 border-0 shadow-sm">
-            <div class="card-header bg-light d-flex justify-content-between align-items-center">
-                <div>
-                    <h5 class="mb-0 text-dark">{{ $submission->assignment->title }}</h5>
-                    <small class="text-muted">{{ $submission->assignment->course->title }}</small>
-                </div>
-                <div>
-                    @if ($submission->status === 'pass')
-                        <span class="badge bg-success">✅ Passed</span>
-                    @else
-                        <span class="badge bg-danger">❌ Failed</span>
-                    @endif
-                </div>
-            </div>
-            <div class="card-body">
-                <p class="mb-0">
-                    <strong>Status:</strong>
-                    @if ($submission->status === 'pass')
-                        <span class="text-success">Well done! 🎉</span>
-                    @else
-                        <span class="text-danger">Needs improvement.</span>
-                    @endif
-                </p>
-            </div>
+    @if($submissions->count())
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover shadow-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>#</th>
+                        <th>Assignment Title</th>
+                        <th>Course</th>
+                        <th>Status</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($submissions as $index => $submission)
+                        <tr>
+                            <td>{{ $index + 1 }}</td>
+                            <td>{{ $submission->assignment->title }}</td>
+                            <td>{{ $submission->assignment->course->title }}</td>
+                            <td>
+                                @if ($submission->status === 'pass')
+                                    <span class="badge bg-success">✅ Passed</span>
+                                @else
+                                    <span class="badge bg-danger">❌ Failed</span>
+                                @endif
+                            </td>
+                            <td>
+                                @if ($submission->status === 'pass')
+                                    <span class="text-success">Well done! 🎉</span>
+                                @else
+                                    <span class="text-danger">Needs improvement.</span>
+                                @endif
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
-    @empty
+    @else
         <div class="alert alert-info shadow-sm">
             No assignment scores available yet.
         </div>
-    @endforelse
+    @endif
 </div>
 @endsection

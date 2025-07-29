@@ -5,7 +5,7 @@
 <div class="position-fixed top-0 end-0 p-3" style="z-index: 1050;">
     <div class="toast welcome-toast text-white bg-success border-0 show" role="alert" id="welcomeToast">
         <div class="d-flex">
-            <div class="toast-body">
+            <div class="toast-body" style="color: black">
                 Welcome, {{ auth()->user()->name }}!
             </div>
             <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>

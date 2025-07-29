@@ -20,9 +20,9 @@
                         <p class="mb-1 text-muted">
                             👨‍🏫 By <strong>{{ $course->author->name }}</strong> &nbsp;|&nbsp; 👁️ {{ $course->views }} views
                         </p>
-                        <p class="text-secondary small">
+                        {{-- <p class="text-secondary small">
                             Keep learning and expanding your knowledge!
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
-@extends('layouts.school')
+@extends('layouts.student')
 
-@section('schoolcontent')
+@section('studentcontent')
 <div class="container py-4">
     <h4>🚀 Live Class: {{ $liveClass->course->title }}</h4>
 
