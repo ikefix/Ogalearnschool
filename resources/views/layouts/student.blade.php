@@ -14,7 +14,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Custom student CSS (where you can move sidebar styles) -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/student.css'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
 
     <style>
         body {
