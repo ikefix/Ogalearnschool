@@ -11,7 +11,7 @@
         </li>
         <li>
             <a href="{{ route('student.courses') }}" class="nav-link">
-                My Courses1
+                My Courses
             </a>
         </li>
         <li>
