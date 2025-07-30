@@ -333,6 +333,7 @@
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
+        gap: 0;
     }
 
     .hero-text h1 {
@@ -342,6 +343,18 @@
     .hero-text p {
         font-size: 1rem;
     }
+
+    .hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 }
 
 
@@ -675,14 +688,14 @@
 
 /* Responsive */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .about-content {
     flex-direction: column;
     text-align: center;
   }
-  .about-text {
-    max-width: 100%;
-  }
+  .about-text{
+  width: 100% !important;
+}
   .about-button {
     justify-content: center;
   }
@@ -691,6 +704,7 @@
   .about-button .but3 {
     flex: 1 1 40%;
   }
+  
 }
 
 
@@ -833,7 +847,25 @@
   margin-top: 18.2rem;
 }
 
+@media (max-width: 768px) {
 
+  .choose{
+  flex-direction: column;
+  margin: 0;
+  margin-left: 3.5rem;
+}
+
+
+.about-img3 img {
+    width: 90%;
+}
+
+.about-img3 {
+    /* display: block; */
+    margin-left: -3.5rem;
+}
+
+}
 
 
 
@@ -989,6 +1021,13 @@
     .offer {
         font-size: 1.2rem;
     }
+
+    .services {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #ffffff, #e9f1ff);
+    /* font-family: 'Segoe UI', sans-serif; */
+    text-align: center;
+}
 }
 
 
@@ -1107,6 +1146,13 @@
 }
 
 
+@media screen and (max-width: 768px) {
+
+    .services {
+    padding: 80px 10px;
+}
+
+}
 
 
 
@@ -1297,6 +1343,14 @@
 }
 
 
+
+@media screen and (max-width: 768px) {
+
+.image-slider-section {
+    padding: 40px 20px;
+}
+
+}
 
 
 
