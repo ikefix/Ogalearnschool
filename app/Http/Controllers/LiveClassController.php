@@ -13,8 +13,7 @@ class LiveClassController extends Controller
     {
         $school = auth()->user();
 
-        // ✅ If you moved the courses() relation to School model,
-        // this should now fetch courses where this user is the school
+        // Get courses owned by this school
         $courses = Course::where('school_id', $school->id)->get();
 
         return view('school.live-classes.index', compact('courses'));
@@ -43,37 +42,41 @@ class LiveClassController extends Controller
     }
 
     // View for student to join the live class
-public function join2($id)
-{
-    $liveClass = LiveClass::findOrFail($id);
-    $user = auth()->user();
+    public function join2($id)
+    {
+        $user = auth()->user();
+        $liveClass = LiveClass::findOrFail($id);
 
-    // ✅ Check if user is subscribed to this course
-    if (!$user->subscribedCourses->contains($liveClass->course_id)) {
-        abort(403, 'You are not subscribed to this course.');
+        // ✅ Check if the student has paid for the course
+        $isSubscribed = $user->subscribedCourses()
+            ->where('courses.id', $liveClass->course_id)
+            ->exists();
+
+        if (!$isSubscribed) {
+            abort(403, 'Access denied. You have not subscribed to this course.');
+        }
+
+        return view('live.student', compact('liveClass'));
     }
 
-    return view('live.student', compact('liveClass'));
-}
-
-
-    // Student live classes listing
+    // List live classes for student
     public function studentIndex()
-{
-    $user = auth()->user();
+    {
+        $user = auth()->user();
 
-    // ❗ Use `subscribedCourses`, not `courses`
-    $subscribedCourseIds = $user->subscribedCourses->pluck('id');
+        // Get course IDs the student is subscribed to (paid for)
+        $subscribedCourseIds = $user->subscribedCourses()->pluck('courses.id');
 
-    $liveClasses = LiveClass::with('course')
-        ->whereIn('course_id', $subscribedCourseIds)
-        ->where('status', 'active')
-        ->get();
+        // Get active live classes for those courses
+        $liveClasses = LiveClass::with('course')
+            ->whereIn('course_id', $subscribedCourseIds)
+            ->where('status', 'active')
+            ->get();
 
-    return view('student.live_classes.index', compact('liveClasses'));
-}
+        return view('student.live_classes.index', compact('liveClasses'));
+    }
 
-
+    // End a live class (for school)
     public function end($id)
     {
         $liveClass = LiveClass::findOrFail($id);

@@ -5,34 +5,35 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Carbon;
 use App\Models\Course;
 
-
-class EnsureSubscribed
+class EnsurePaidForCourse
 {
-public function handle(Request $request, Closure $next)
-{
-    $user = Auth::user();
+    public function handle(Request $request, Closure $next)
+    {
+        $user = Auth::user();
 
-    if (!$user) {
-        return redirect()->route('login');
-    }
-
-    // If the route has a course_id or slug
-    $course = $request->route('course') ?? $request->route('slug');
-
-    if ($course) {
-        $courseId = is_object($course) ? $course->id : Course::where('slug', $course)->value('id');
-
-        $hasSubscribed = $user->subscriptions()->where('course_id', $courseId)->exists();
-
-        if (!$hasSubscribed) {
-            return redirect()->route('subscription.notice');
+        if (!$user) {
+            return redirect()->route('login');
         }
+
+        // Get course ID via route binding or slug
+        $courseParam = $request->route('course') ?? $request->route('slug');
+        $courseId = is_object($courseParam)
+            ? $courseParam->id
+            : Course::where('slug', $courseParam)->value('id');
+
+        // Check if the student has already paid for this course
+        $hasPaid = $user->coursePayments()
+            ->where('course_id', $courseId)
+            ->where('status', 'success')
+            ->exists();
+
+        if (!$hasPaid) {
+            return redirect()->route('student.course.preview', ['slug' => Course::findOrFail($courseId)->slug])
+                ->with('error', 'You need to pay for this course to access it.');
+        }
+
+        return $next($request);
     }
-
-    return $next($request);
-}
-
 }

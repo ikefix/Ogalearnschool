@@ -59,7 +59,7 @@
 
 
 <div class="container py-4">
-    <h4>💬 Chat Room - {{ $user->role === 'school' ? $user->name : $user->school->name }}</h4>
+    <h4>💬 Chat Room - {{ $user->role === 'student' ? $user->name : $user->student->name }}</h4>
 
     <div id="chat-box" class="border rounded p-3 mb-3" style="height: 400px; overflow-y: auto;"></div>
 

@@ -32,6 +32,9 @@ return new class extends Migration
         $table->string('thumbnail')->nullable(); // Course cover image
         $table->longText('content')->nullable(); // Rich course body: CKEditor-based
 
+        $table->decimal('price', 8, 2)->default(0);
+
+
         // Add end date column
         $table->date('end_date')->nullable();
 

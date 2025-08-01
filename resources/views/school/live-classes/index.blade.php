@@ -30,7 +30,7 @@
         @forelse ($liveClasses as $class)
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 <div>
-                    <strong>{{ $class->course->title }}</strong>
+                    <strong>{{ $course->title }}</strong>
                     <br>
                     Status: 
                     <span class="badge bg-{{ $class->status === 'active' ? 'success' : 'secondary' }}">

@@ -26,6 +26,7 @@ public function store(Request $request)
 
     $request->validate([
         'title' => 'required|string|max:255',
+        'price' => 'required|numeric|min:0', // ✅ Validate price
         'what_youll_learn' => 'nullable|string',
         'course_outcomes' => 'nullable|string',
         'course_questions' => 'nullable|string',
@@ -43,11 +44,11 @@ public function store(Request $request)
         'author_id' => auth()->id(),
         'title' => $request->title,
         'slug' => Str::slug($request->title) . '-' . uniqid(),
+        'price' => $request->price, // ✅ Save price
 
         'what_youll_learn' => $request->what_youll_learn,
         'course_outcomes' => $request->course_outcomes,
         'course_questions' => $request->course_questions,
-
         'description' => $request->description,
         'thumbnail' => $thumbnailPath,
         'content' => $request->content,
@@ -57,6 +58,7 @@ public function store(Request $request)
 
     return redirect()->route('courses.create')->with('success', 'Course created successfully.');
 }
+
 
 
 }

@@ -9,21 +9,22 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'school_id',
-        'author_id',
-        'title',
-        'slug',
-        'what_youll_learn',
-        'course_outcomes',
-        'course_questions',
-        'description',
-        'thumbnail',
-        'content',
-        'views',
-        'likes',
-        'status',
-    ];
+   protected $fillable = [
+    'school_id',
+    'author_id',
+    'title',
+    'slug',
+    'what_youll_learn',
+    'course_outcomes',
+    'course_questions',
+    'description',
+    'thumbnail',
+    'content',
+    'views',
+    'likes',
+    'status',
+    'price', // ✅ Add this line
+];
 
     /**
      * Get the school that owns the course.
@@ -96,4 +97,13 @@ class Course extends Model
     {
         return $this->subscribers()->where('user_id', $userId)->exists();
     }
+
+
+
+    public function payments()
+{
+    return $this->hasMany(CoursePayment::class, 'course_id');
+}
+
+
 }

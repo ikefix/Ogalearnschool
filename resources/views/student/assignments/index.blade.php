@@ -45,36 +45,42 @@
                     @if($submission->file_path)
                         <div class="mb-2">
                             <strong>📂 Submitted File:</strong>
-                            <a href="{{ asset('storage/' . $submission->file_path) }}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
+                            <a href="{{ Storage::url($submission->file_path) }}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
                                 View File
                             </a>
                         </div>
                     @endif
 
                 @else
-                    <form method="POST" action="{{ route('student.assignments.submit', $assignment->id) }}" enctype="multipart/form-data" class="mt-3">
-                        @csrf
+                    <button class="btn btn-outline-primary toggle-form-btn mt-3" data-target="#form-{{ $assignment->id }}">
+                        🔽 Open Submission Form
+                    </button>
 
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">✍️ Answer (Optional)</label>
-                            <textarea name="content" rows="3" class="form-control @error('content') is-invalid @enderror" placeholder="Write your answer here..."></textarea>
-                            @error('content')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
+                    <div id="form-{{ $assignment->id }}" class="assignment-form mt-3" style="display: none;">
+                        <form method="POST" action="{{ route('student.assignments.submit', $assignment->id) }}" enctype="multipart/form-data">
+                            @csrf
 
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">📎 Upload File (Optional)</label>
-                            <input type="file" name="file" class="form-control @error('file') is-invalid @enderror">
-                            @error('file')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
-                        </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">✍️ Answer (Optional)</label>
+                                <textarea name="content" rows="3" class="form-control @error('content') is-invalid @enderror" placeholder="Write your answer here..."></textarea>
+                                @error('content')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
 
-                        <button type="submit" class="btn btn-success">
-                            📤 Submit Assignment
-                        </button>
-                    </form>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">📎 Upload File (Optional)</label>
+                                <input type="file" name="file" class="form-control @error('file') is-invalid @enderror">
+                                @error('file')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <button type="submit" class="btn btn-success">
+                                📤 Submit Assignment
+                            </button>
+                        </form>
+                    </div>
                 @endif
             </div>
         </div>
@@ -84,4 +90,27 @@
         </div>
     @endforelse
 </div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.toggle-form-btn');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const formId = this.getAttribute('data-target');
+                const formDiv = document.querySelector(formId);
+
+                if (formDiv.style.display === 'none') {
+                    formDiv.style.display = 'block';
+                    this.textContent = '🔼 Close Submission Form';
+                } else {
+                    formDiv.style.display = 'none';
+                    this.textContent = '🔽 Open Submission Form';
+                }
+            });
+        });
+    });
+</script>
 @endsection
+

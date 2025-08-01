@@ -13,7 +13,7 @@ use App\Http\Controllers\StudentCourseController;
 use App\Http\Controllers\SchoolCourseController;
 use App\Http\Controllers\LiveClassController;
 use App\Http\Controllers\CourseAssetController;
-use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\CoursePaymentController;
 use App\Http\Controllers\School\SubmissionReviewController;
 
 use App\Events\EphemeralMessageEvent;
@@ -35,11 +35,19 @@ Route::get('/', function () {
 
 Auth::routes();
 
+
+
+    // Chat Room
+    Route::get('/student/chat-room', function () {
+        return view('student.chat-room');
+    })->name('student.chat-room')->middleware(['student']);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/subscription-required', function () {
-    return view('subscription.notice');
-})->name('subscription.notice');
+// Route::get('/subscription-required', function () {
+//     return view('subscription.notice');
+// })->name('subscription.notice');
+
 
 
 Route::middleware(['auth', 'ensure.subscribed'])->group(function () {
@@ -47,9 +55,25 @@ Route::middleware(['auth', 'ensure.subscribed'])->group(function () {
 });
 
 
-Route::get('/subscribe', [SubscriptionController::class, 'showSubscriptionForm'])->name('subscription.plans');
+Route::get('/student/courses/{course}', [CoursePaymentController::class, 'preview'])
+    ->name('student.course.preview');
 
-Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscription.subscribe');
+
+Route::middleware(['auth', 'student'])->group(function () {
+    Route::get('/student/courses/{course}/pay', [CoursePaymentController::class, 'redirectToGateway'])->name('student.course.pay');
+    Route::get('/student/courses/payment/callback', [CoursePaymentController::class, 'handleGatewayCallback'])->name('student.course.callback');
+});
+
+Route::get('/student/course/{slug}/preview', [CoursePaymentController::class, 'preview'])->name('student.preview');
+
+Route::get('/student/course/{slug}', [StudentCourseController::class, 'show'])->name('student.show');
+
+
+
+
+// Route::get('/subscribe', [SubscriptionController::class, 'showSubscriptionForm'])->name('subscription.plans');
+
+// Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscription.subscribe');
 
 
 
@@ -95,7 +119,7 @@ Route::get('/learn-with-ogalearn', function () {
 Route::get('student/scores', [StudentScoreController::class, 'index'])->name('student.scores.index');
 
 
-        Route::get('student/assignments', [StudentAssignmentController::class, 'index'])->name('student.assignments.index');
+Route::get('student/assignments', [StudentAssignmentController::class, 'index'])->name('student.assignments.index');
 
 Route::middleware(['auth', 'ensuresubscribed'])->group(function () {
 
@@ -109,10 +133,6 @@ Route::middleware(['auth', 'ensuresubscribed'])->group(function () {
     Route::post('/student/course/{id}/like', [StudentCourseController::class, 'like'])->name('student.like.course');
     Route::post('/student/course/{id}/unlike', [StudentCourseController::class, 'unlike'])->name('student.unlike.course');
 
-    // Chat Room
-    Route::get('/student/chat-room', function () {
-        return view('student.chat-room');
-    })->name('student.chat-room')->middleware(['student']);
 
     // Live Class
     Route::get('/student/live-class', function () {

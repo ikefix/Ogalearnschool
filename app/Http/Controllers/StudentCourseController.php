@@ -26,20 +26,18 @@ class StudentCourseController extends Controller
 
 public function show($slug)
 {
+    $course = Course::where('slug', $slug)->firstOrFail();
     $user = auth()->user();
 
-    if ($user->role !== 'student') {
-        abort(403);
+    // ✅ Check if the user has paid
+    if (!$user->hasPaidForCourse($course->id)) {
+        return redirect()->route('student.course.preview', $course->slug);
     }
 
-    $course = Course::with(['comments.user']) // eager load comments with commenter info
-        ->where('slug', $slug)
-        ->where('school_id', $user->school_id)
-        ->where('status', 'published')
-        ->firstOrFail();
-
+    // ✅ Load course content
     return view('student.show', compact('course'));
 }
+
 
 
 public function postComment(Request $request, $id)

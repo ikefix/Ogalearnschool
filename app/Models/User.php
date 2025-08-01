@@ -68,10 +68,31 @@ class User extends Authenticatable
         return $this->hasMany(Course::class, 'school_id');
     }
 
-    public function subscribedCourses()
+//     public function subscribedCourses()
+// {
+//     return $this->belongsToMany(Course::class, 'subscriptions', 'user_id', 'course_id')->withTimestamps();
+// }
+
+public function subscribedCourses()
 {
-    return $this->belongsToMany(Course::class, 'subscriptions', 'user_id', 'course_id')->withTimestamps();
+    return $this->belongsToMany(Course::class, 'course_payments', 'student_id', 'course_id')
+        ->withTimestamps();
 }
+
+
+
+
+
+
+public function hasPaidForCourse($courseId)
+{
+    return CoursePayment::where('student_id', $this->id)
+        ->where('course_id', $courseId)
+        ->where('status', 'success')
+        ->exists();
+}
+
+
 
 
     public function liveClasses()
@@ -84,23 +105,31 @@ class User extends Authenticatable
         return $this->hasMany(Submission::class, 'student_id');
     }
 
-    public function subscriptions()
+//     public function subscriptions()
+// {
+//     return $this->belongsToMany(Course::class, 'subscriptions', 'user_id', 'course_id')->withTimestamps();
+// }
+
+    // public function hasActiveSubscription()
+    // {
+    //     return $this->subscription &&
+    //            $this->subscription->ends_at->isFuture();
+    // }
+
+    // /**
+    //  * Courses the student has enrolled in
+    //  */
+    // public function enrolledCourses()
+    // {
+    //     return $this->belongsToMany(Course::class, 'course_enrollments')->withTimestamps();
+    // }
+
+
+
+    public function coursePayments()
 {
-    return $this->belongsToMany(Course::class, 'subscriptions', 'user_id', 'course_id')->withTimestamps();
+    return $this->hasMany(CoursePayment::class, 'student_id');
 }
 
-    public function hasActiveSubscription()
-    {
-        return $this->subscription &&
-               $this->subscription->ends_at->isFuture();
-    }
-
-    /**
-     * Courses the student has enrolled in
-     */
-    public function enrolledCourses()
-    {
-        return $this->belongsToMany(Course::class, 'course_enrollments')->withTimestamps();
-    }
 
 }

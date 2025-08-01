@@ -55,9 +55,9 @@
                         <h1>Empower Your Future Through Learning</h1>
                         <p>Learn high-demand skills from top instructors in tech, business, design & more.</p>
                         <div class="hero-buttons">
-                            {{-- <a href="{{ route('courses.index') }}" class="btn primary">📚 Browse Courses</a> --}}
+                            {{-- <a href="{{ route('courses.index') }}" class="btn primary">ðŸ“š Browse Courses</a> --}}
                             <a href="{{ route('register.school') }}" class="btn primary">Register(For School)</a>
-                            <a href="{{ route('register') }}" class="btn secondary">🚀 Start Learning</a>
+                            <a href="{{ route('register') }}" class="btn secondary">ðŸš€ Start Learning</a>
                         </div>
                     </div>
                     <div class="hero-image">
@@ -286,7 +286,7 @@
                                 </a>
                             </div> --}}
 
-                            <!-- 👇 HIDDEN by default -->
+                            <!-- ðŸ‘‡ HIDDEN by default -->
                             <div id="comen-more">
                                 <div class="cou-men-flex">
                                     <a href="/Ogalearn-check.php">
@@ -366,7 +366,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- 👇 SHOW MORE BUTTON -->
+                        <!-- ðŸ‘‡ SHOW MORE BUTTON -->
                             <div class="more-course">
                                 <a class="shomo" id="shomo">
                                     {{-- <button id="shomo-button">Show More</button> --}}
