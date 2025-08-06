@@ -48,10 +48,15 @@
         <div class="card h-100 border-0 shadow-sm rounded course-card">
             <div class="position-relative">
                 @if($course->thumbnail)
-                    <img src="{{ asset('storage/' . $course->thumbnail) }}" class="card-img-top rounded-top" alt="{{ $course->title }}">
+                    @php
+                        $isCloudinary = Str::startsWith($course->thumbnail, ['http://', 'https://']);
+                        $thumbnailUrl = $isCloudinary ? $course->thumbnail : asset('storage/' . $course->thumbnail);
+                    @endphp
+                    <img src="{{ $thumbnailUrl }}" class="card-img-top rounded-top" alt="{{ $course->title }}">
                 @else
                     <img src="https://via.placeholder.com/300x200.png?text=No+Image" class="card-img-top rounded-top" alt="No image">
                 @endif
+
 
                 <!-- Icon overlay -->
                 <div class="course-icon-overlay">

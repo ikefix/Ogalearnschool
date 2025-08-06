@@ -17,8 +17,8 @@
                     @endphp
 
                     <div class="mb-4">
-                        @if ($user->profile_photo)
-                            <img src="{{ asset('storage/' . $user->profile_photo) }}" 
+                        @if (Auth::user()->profile_photo)
+                            <img src="{{ Auth::user()->profile_photo }}" 
                                  alt="Profile Picture" 
                                  class="rounded-circle shadow" 
                                  width="150" height="150"

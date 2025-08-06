@@ -2,28 +2,34 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Helpers\DriveUploadHelper;
 use Illuminate\Support\Facades\Auth;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
+use Illuminate\Http\Request;
+
 
 class ProfileController extends Controller
 {
     public function upload(Request $request)
-    {
-        $request->validate([
-            'profile_photo' => ['required', 'image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
-        ]);
+{
+    $request->validate([
+        'profile_photo' => ['required', 'image', 'mimes:jpeg,png,jpg,gif', 'max:2048'],
+    ]);
 
-        $user = Auth::user();
+    $user = Auth::user();
 
-        // Store the uploaded file
-        $filePath = $request->file('profile_photo')->store('profile_photos', 'public');
+    // Upload to Cloudinary and get secure URL
+    $uploadedFileUrl = Cloudinary::upload($request->file('profile_photo')->getRealPath(), [
+        'folder' => 'profile_photos',
+        'public_id' => 'user_' . $user->id . '_profile'
+    ])->getSecurePath();
 
-        // Update the user's profile photo
-        $user->profile_photo = $filePath;
-        $user->save();
+    // Save the URL in the database
+    $user->profile_photo = $uploadedFileUrl;
+    $user->save();
 
-        return back()->with('success', 'Profile picture updated successfully.');
-    }
+    return back()->with('success', 'Profile photo uploaded to Cloudinary successfully.');
+}
 
     public function studentForm()
     {

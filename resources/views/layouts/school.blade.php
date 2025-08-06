@@ -53,8 +53,8 @@
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         ">
-            @if ($user->profile_photo)
-                <img src="{{ asset('storage/' . $user->profile_photo) }}" 
+            @if (Auth::user()->profile_photo)
+                <img src="{{ Auth::user()->profile_photo }}" 
                     alt="Profile Picture" 
                     class="rounded-circle shadow" 
                     width="20" height="20"

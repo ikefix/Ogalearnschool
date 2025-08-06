@@ -21,10 +21,10 @@
         </div>
 
         {{-- Price --}}
-<div class="mb-3">
-    <label class="form-label">Course Price (₦)</label>
-    <input type="number" name="price" class="form-control" min="0" step="0.01" placeholder="e.g. 5000" required>
-</div>
+        <div class="mb-3">
+            <label class="form-label">Course Price (₦)</label>
+            <input type="number" name="price" class="form-control" min="0" step="0.01" placeholder="e.g. 5000" required>
+        </div>
 
         {{-- What You'll Learn --}}
         <div class="mb-3">
