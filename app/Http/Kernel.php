@@ -66,6 +66,7 @@ class Kernel extends HttpKernel
         'school' => \App\Http\Middleware\EnsureUserIsSchool::class,
         'student' => \App\Http\Middleware\EnsureUserIsStudent::class,
         'ensuresubscribed' => \App\Http\Middleware\EnsureSubscribed::class,
+    'ensure.subscribed' => \App\Http\Middleware\EnsureSubscribed::class,
 
 
     ];

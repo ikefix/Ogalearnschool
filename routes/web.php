@@ -15,6 +15,7 @@ use App\Http\Controllers\LiveClassController;
 use App\Http\Controllers\CourseAssetController;
 use App\Http\Controllers\CoursePaymentController;
 use App\Http\Controllers\School\SubmissionReviewController;
+use App\Http\Middleware\EnsureSubscribed;
 
 use App\Events\EphemeralMessageEvent;
 
@@ -50,23 +51,38 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::middleware(['auth', 'ensure.subscribed'])->group(function () {
-    Route::get('/school/dashboard', [SchoolController::class, 'index'])->name('school.dashboard');
+Route::middleware(['auth'])->group(function () {
+
+    // School dashboard
+    Route::get('/school/dashboard', [SchoolController::class, 'index'])
+        ->name('school.dashboard');
+
+    // Student course list page (all enrolled/paid courses)
+    Route::get('/student/courses', [StudentCourseController::class, 'index'])
+        ->name('student.courses');
+
+    // Course content page (requires payment) - PROTECTED
+    Route::get('/student/course/{slug}', [StudentCourseController::class, 'show'])
+        ->middleware('ensure.subscribed') // 👈 Middleware to check payment
+        ->name('student.show');
+
+    // Course preview page (before payment)
+    Route::get('/student/course/{slug}/preview', [CoursePaymentController::class, 'preview'])
+        ->name('student.course.preview'); // 👈 This name must match the middleware redirect
+
+    // Course payment: redirect to Paystack/Stripe
+    Route::get('/student/courses/{course}/pay', [CoursePaymentController::class, 'redirectToGateway'])
+        ->name('student.course.pay');
+
+    // Payment callback from Paystack/Stripe
+    Route::get('/student/courses/payment/callback', [CoursePaymentController::class, 'handleGatewayCallback'])
+        ->name('student.course.callback');
 });
-
-
-Route::get('/student/courses/{course}', [CoursePaymentController::class, 'preview'])
-    ->name('student.course.preview');
 
 
 Route::middleware(['auth', 'student'])->group(function () {
-    Route::get('/student/courses/{course}/pay', [CoursePaymentController::class, 'redirectToGateway'])->name('student.course.pay');
-    Route::get('/student/courses/payment/callback', [CoursePaymentController::class, 'handleGatewayCallback'])->name('student.course.callback');
 });
 
-Route::get('/student/course/{slug}/preview', [CoursePaymentController::class, 'preview'])->name('student.preview');
-
-Route::get('/student/course/{slug}', [StudentCourseController::class, 'show'])->name('student.show');
 
 
 
@@ -104,7 +120,6 @@ Route::get('/learn-with-ogalearn', function () {
     })->middleware(['student'])->name('student.dashboard');
 
     
-    Route::get('/student/courses', [StudentCourseController::class, 'index'])->name('student.courses');
 
     
     Route::get('/student/live-classes', [LiveClassController::class, 'studentIndex'])->name('student.live-classes.index');

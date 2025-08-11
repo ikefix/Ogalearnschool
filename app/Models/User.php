@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Models\CoursePayment;
+use App\Models\Course;
 use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
@@ -126,10 +128,11 @@ public function hasPaidForCourse($courseId)
 
 
 
-    public function coursePayments()
+public function coursePayments()
 {
     return $this->hasMany(CoursePayment::class, 'student_id');
 }
+
 
 
 }
