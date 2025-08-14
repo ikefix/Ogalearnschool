@@ -20,7 +20,7 @@
             </a>
         </li>
         <li>
-            <a href="{{ route('student.chat-room') }}" class="nav-link">
+            <a href="{{ route('student.chat-room') }}" class="nav-link" target="_blank">
                 Chat Room
             </a>
         </li>

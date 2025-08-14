@@ -54,14 +54,21 @@
                     <div class="hero-text">
                         <h1>Empower Your Future Through Learning</h1>
                         <p>Learn high-demand skills from top instructors in tech, business, design & more.</p>
+                        <div style="height: 8vh">
+                            <h3 class="typing"></h3><br>
+                        </div>
                         <div class="hero-buttons">
                             {{-- <a href="{{ route('courses.index') }}" class="btn primary">ðŸ“š Browse Courses</a> --}}
-                            <a href="{{ route('register.school') }}" class="btn primary">Register(For School)</a>
-                            <a href="{{ route('register') }}" class="btn secondary">ðŸš€ Start Learning</a>
+                            {{-- <a href="{{ route('register.school') }}" class="btn primary">Register As A School</a> --}}
+                            <a href="{{ route('register') }}" class="btn secondary">Start Application</a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <img src="{{ asset('Online learning-amico.svg') }}" alt="Online learning">
+                        <img src="{{ asset('new-hero-bg-CkfV5je9.png') }}" alt="Online learning">
+                        {{-- <span class="floating-text">HTML</span> --}}
+                        <i class='bx bxl-html5 floating-text'></i>
+                        <i class='bx bxl-nodejs floating-js'></i>
+                        <i class='bx bxl-css3 floating-css'></i>
                     </div>
                 </div>
             </section>
@@ -156,6 +163,31 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gain">
+                <h1>All-in-one learning experience</h1>
+                <p>Here's how The Programmers works: most-updated curriculums, responsive mentoring and career guidance. You'll also get skills all delivered in a 100% online program.</p>
+                <div class="gain-container">
+                    <div class="gain-imgage">
+                        <img src="{{ asset('new-hero-bg-CkfV5je9.png') }}" alt="All-in-one learning experience">
+                    </div>
+                    <div class="gain-text">
+                        <h1>What you'll gain</h1>
+                        <div class="gain-text-all">
+                            <div>
+                                <span><h4>Fast-Paced Learning:</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, libero officiis. Iusto adipisci exercitationem totam eum rem! Quo, minima deserunt ducimus, delectus iure sit neque magnam dolore quaerat mollitia illo?</span>
+                            </div>
+                            <div>
+                                <span><h4>Fast-Paced Learning:</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, libero officiis. Iusto adipisci exercitationem totam eum rem! Quo, minima deserunt ducimus, delectus iure sit neque magnam dolore quaerat mollitia illo?</span>
+                            </div>
+                            <div>
+                                <span><h4>Fast-Paced Learning:</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, libero officiis. Iusto adipisci exercitationem totam eum rem! Quo, minima deserunt ducimus, delectus iure sit neque magnam dolore quaerat mollitia illo?</span>
+                            </div>
+                        </div>
+                        <a href=""><button>Start Your Journey Now</button></a>
                     </div>
                 </div>
             </div>
@@ -378,7 +410,7 @@
 
 
 
-            <div class="services">
+            {{-- <div class="services">
                 <div class="services-content">
                     <div class="service-tent1">
                         <h3>Services</h3>
@@ -428,7 +460,7 @@
                                     <h2 class="noty">We Develop And Create Website</h2>
                                     <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                         <div class="ser-tent sert">
                             <div class="service-tent-con">
@@ -458,10 +490,10 @@
                         </div>
                     </div>
                     <div class="service-button">
-                        {{-- <button id="view-more-btn">View More Services</button> --}}
+                        {{-- <button id="view-more-btn">View More Services</button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
 <section class="image-slider-section py-4">
     <div class="swiper mySwiper">
@@ -649,6 +681,46 @@
                     <button class="next-btn">&Rightarrow;</button>
                 </div>
             </div>
+
+            <div class="faq-wrapper">
+
+                <!-- Left Side -->
+                <div class="faq-left">
+                    <h4>Frequently Asked Questions</h4>
+                    <h2>Start Learning <br>Find Here.</h2>
+                    <p>Start an adventure on discovering amazing courses</p>
+                    <a href="{{ route('register') }}"><button class="contact-btn">Register Now</button></a>
+                </div>
+
+                <!-- Right Side -->
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <div class="faq-question">Is Opening An Account Free?</div>
+                        <div class="faq-answer">Yes, creating an account is completely free. You can sign up and start using our services right away without paying any fees.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Why Do I Need To Logout Every Time?</div>
+                        <div class="faq-answer">Logging out helps secure your account, especially on shared or public devices, and prevents unauthorized access.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How To Open An Account?</div>
+                        <div class="faq-answer">Click on the "Sign Up" button, fill in the required details, and verify your email address to activate your account.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">I Forgot My Password?</div>
+                        <div class="faq-answer">Click on "Forgot Password" at the login page and follow the instructions to reset your password via email.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">How Much Percentage Will I Make A Year?</div>
+                        <div class="faq-answer">Your yearly percentage depends on the plan you choose. Please check our pricing and plan details for more information.</div>
+                    </div>
+                </div>
+            </div>
+
             @include("includes.footer")
         
 
@@ -715,6 +787,36 @@
                     }
                 });
             </script>
+
+            <script>
+    const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((question) => {
+    question.addEventListener("click", () => {
+        const openQuestion = document.querySelector(".faq-question.active");
+
+        // Close currently open FAQ
+        if (openQuestion && openQuestion !== question) {
+            openQuestion.classList.remove("active");
+            const openAnswer = openQuestion.nextElementSibling;
+            openAnswer.style.maxHeight = null;
+            openAnswer.classList.remove("open");
+        }
+
+        // Toggle clicked FAQ
+        question.classList.toggle("active");
+        const answer = question.nextElementSibling;
+        if (question.classList.contains("active")) {
+            answer.classList.add("open");
+            answer.style.maxHeight = answer.scrollHeight + "px"; // <-- ensures correct height
+        } else {
+            answer.style.maxHeight = null;
+            answer.classList.remove("open");
+        }
+    });
+});
+
+</script>
 
             {{-- <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -785,6 +887,16 @@
   });
 </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //TYPE WRITER EFFECT
+        var typed = new Typed(".typing", {
+            strings:["", "We specialise on Making money", "", "We are extremely cheap", "", "Our services are affordable", "", "We give you the best offer", "", "Ethical Hacker", "", "Youtuber"],
+            typeSpeed:100,
+            BackSpeed:300,
+            loop:true
+        })
 
+    </script>
     </body>
 </html>
