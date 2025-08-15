@@ -31,29 +31,13 @@
                 </div>
             @endif --}}
 
-            {{-- <div class="hero">
-                <div class="hero-content">
-                    <div class="container">
-                        <div class="typewriter">
-                            <div class="hetop"><h2 >Welcome to <i>Ogalearn University</i></h2></div>
-                            <div><h1 class="retype" id="text"></h1></div>
-                            <div class="des"><p>School of  Software Development and Data Analysis</p></div>
-                            <div class="yort">
-                                <a href="/Ogalearn-Project/Navbar/Sign/sign.php"><button class="type-new">Create An Account</button></a>
-                                <a href=""><button class="get-new">Get started</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-
             <section class="hero-section">
                 
                 @include("includes.nav1")
                 <div class="hero-container">
                     <div class="hero-text">
-                        <h1>Empower Your Future Through Learning</h1>
-                        <p>Learn high-demand skills from top instructors in tech, business, design & more.</p>
+                        <h1>Learn.Build.Get hired <br> All In 5 Months</h1>
+                        <p>Learn by building. Become a Full-Stack Developer and land a high-paying job in months — no experience, no degree, no limits.</p>
                         <div style="height: 8vh">
                             <h3 class="typing"></h3><br>
                         </div>
@@ -172,7 +156,7 @@
                 <p>Here's how The Programmers works: most-updated curriculums, responsive mentoring and career guidance. You'll also get skills all delivered in a 100% online program.</p>
                 <div class="gain-container">
                     <div class="gain-imgage">
-                        <img src="{{ asset('new-hero-bg-CkfV5je9.png') }}" alt="All-in-one learning experience">
+                        <img src="{{ asset('portrait-person-promoting-marketing-campaign-removebg-preview.png') }}" alt="All-in-one learning experience">
                     </div>
                     <div class="gain-text">
                         <h1>What you'll gain</h1>
@@ -242,42 +226,64 @@
                     <div class="course-menu">
                         <div class="cou-menu">
                             <div class="cou-men-flex">
-                                <a>
-                                    <div>
-                                        <div class="cou-menu-con">
-                                            <div><img src="{{ asset('WhatsApp Image 2024-03-23 at 9.47.58 AM (2).jpg') }}" alt="Image"></div>
-                                            <div class="course-topic">
-                                                <h3 class="topy">Summer Holiday Training</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a>
-                                    <div>
-                                        <div class="cou-menu-cen">
-                                            <div><img src="{{ asset('WhatsApp Image 2025-07-18 at 10.22.18.jpeg') }}" alt="Image"></div>
-                                            <div class="course-topic">
-                                                <h3 class="topy">Data Analytics</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a>
-                                    <div>
-                                        <div class="cou-menu-can">
-                                            <div><img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="Image"></div>
-                                            <div class="course-topic">
-                                                <h3 class="topy">Digital Marketing</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                 <a>
+        <div>
+            <div class="cou-menu-con">
+                <div><img src="{{ asset('WhatsApp Image 2024-03-23 at 9.47.58 AM (2).jpg') }}" alt="Image"></div>
+                <div class="course-topic">
+                    <h3 class="topy">Summer Holiday Training</h3>
+                    <h2 class="noty">Earn A Degree</h2>
+                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                </div>
+
+                <div class="see-more" style="display:none;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                </div>
+                
+                <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a>
+        <div>
+            <div class="cou-menu-cen">
+                <div><img src="{{ asset('WhatsApp Image 2025-07-18 at 10.22.18.jpeg') }}" alt="Image"></div>
+                <div class="course-topic">
+                    <h3 class="topy">Data Analytics</h3>
+                    <h2 class="noty">Earn A Degree</h2>
+                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                </div>
+
+                <div class="see-more" style="display:none;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                </div>
+                
+                <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a>
+        <div>
+            <div class="cou-menu-can">
+                <div><img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="Image"></div>
+                <div class="course-topic">
+                    <h3 class="topy">Digital Marketing</h3>
+                    <h2 class="noty">Earn A Degree</h2>
+                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                </div>
+
+                <div class="see-more" style="display:none;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                </div>
+                
+                <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+            </div>
+        </div>
+    </a>
                             </div>
                             {{-- <div class="cou-men-flex">
                                 <a>
@@ -817,20 +823,6 @@ questions.forEach((question) => {
 });
 
 </script>
-
-            {{-- <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const viewMoreBtn = document.getElementById("view-more-btn");
-                    const extraServices = document.querySelector(".sert");
-                    let isVisible = false;
-
-                    viewMoreBtn.addEventListener("click", function () {
-                        isVisible = !isVisible;
-                        extraServices.classList.toggle("show", isVisible);
-                        viewMoreBtn.textContent = isVisible ? "View Less Services" : "View More Services";
-                    });
-                });
-            </script> --}}
             <script>
             const images = document.querySelectorAll('.job-img');
             const popups = document.querySelectorAll('.popup-content');
@@ -891,12 +883,25 @@ questions.forEach((question) => {
     <script>
         //TYPE WRITER EFFECT
         var typed = new Typed(".typing", {
-            strings:["", "We specialise on Making money", "", "We are extremely cheap", "", "Our services are affordable", "", "We give you the best offer", "", "Ethical Hacker", "", "Youtuber"],
+            strings:["", "Build Skills That Get You Hired", "", "Code Your Way to Success", "", "Your Tech Career Starts Here", "", "5 Months to Full-Stack Mastery", "", "Code Your Way to Success", "", "Learn Fast. Build Big"],
             typeSpeed:100,
             BackSpeed:300,
             loop:true
         })
 
     </script>
+
+<script>
+function toggleSeeMore(btn) {
+    const seeMoreDiv = btn.previousElementSibling;
+    if (seeMoreDiv.style.display === "none" || seeMoreDiv.style.display === "") {
+        seeMoreDiv.style.display = "block";
+        btn.textContent = "Read Less";
+    } else {
+        seeMoreDiv.style.display = "none";
+        btn.textContent = "Read Me";
+    }
+}
+</script>
     </body>
 </html>

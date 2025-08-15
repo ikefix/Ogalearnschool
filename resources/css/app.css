@@ -12,7 +12,6 @@
 
 
 
-
     /* Slide in from right */
     .slide-in {
         animation: slideInRight 0.6s ease-out forwards;
@@ -581,8 +580,8 @@
     /* max-width: 1200px; */
     /* margin: auto; */
     text-align: center;
-    background: linear-gradient(135deg, #1e3a8a, #9333ea);
-    /* background: black; */
+    background: linear-gradient(135deg, #1e3a8a, black);
+     /*background: black; */
     color: white !important;
 }
 
@@ -595,7 +594,7 @@
 
 .gain > p {
     max-width: 700px;
-    margin: 0 auto 2rem;
+    margin: 0 auto 0rem;
     color: white !important;
     line-height: 1.6;
 }
@@ -617,7 +616,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    /*box-shadow: 0 5px 15px rgba(0,0,0,0.1);*/
 }
 
 .gain-text {
@@ -1794,3 +1793,24 @@
 .typed-cursor{
     display: none;
 }
+
+
+
+
+.see-more {
+        display: none; /* hidden by default */
+        margin-top: 10px;
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .read-btn {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 6px 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
