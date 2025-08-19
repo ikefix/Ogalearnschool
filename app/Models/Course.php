@@ -105,5 +105,11 @@ class Course extends Model
     return $this->hasMany(CoursePayment::class, 'course_id');
 }
 
+public function activities()
+{
+    return $this->hasMany(Activity::class);
+}
+
+
 
 }

@@ -45,6 +45,8 @@ public function show($slug)
 
 
 
+
+
 public function like($id)
 {
     $course = Course::findOrFail($id);

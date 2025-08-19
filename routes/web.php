@@ -16,7 +16,7 @@ use App\Http\Controllers\CourseAssetController;
 use App\Http\Controllers\CoursePaymentController;
 use App\Http\Controllers\School\SubmissionReviewController;
 use App\Http\Middleware\EnsureSubscribed;
-
+use App\Http\Controllers\ActivityController;
 use App\Events\EphemeralMessageEvent;
 
 /*
@@ -421,3 +421,32 @@ Route::prefix('school')->group(function () {
     Route::post('submissions/{submission}/status', [SubmissionReviewController::class, 'updateStatus'])->name('school.submissions.updateStatus');
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Student route
+Route::get('/activities', [ActivityController::class, 'index'])->name('student.activities');
+
+    Route::get('/school/activities', [ActivityController::class, 'manage'])->name('school.activities');
+    Route::post('/school/activities', [ActivityController::class, 'store'])->name('school.activities.store');
+    Route::delete('/school/activities/{id}', [ActivityController::class, 'destroy'])->name('school.activities.delete');
+
+Route::get('/student/course/{id}/activities', [ActivityController::class, 'showCourseActivities'])
+    ->name('student.course.activities');
+
+    Route::get('/student/my-courses', [ActivityController::class, 'myCourses'])
+    ->name('student.my-courses');

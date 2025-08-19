@@ -16,6 +16,8 @@
     <!-- Custom student CSS (where you can move sidebar styles) -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
 
+
+
     <style>
         body {
             margin: 0;

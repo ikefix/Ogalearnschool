@@ -25,6 +25,11 @@
             </a>
         </li>
         <li>
+            <a href="{{ route('student.my-courses') }}" class="nav-link">
+                Events
+            </a>
+        </li>
+        <li>
             <a href="{{ url('/student/assets') }}" class="nav-link">
                 Assets
             </a>

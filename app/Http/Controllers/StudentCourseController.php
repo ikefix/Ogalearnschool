@@ -40,6 +40,42 @@ public function show($slug)
 
 
 
+
+
+public function myCourses()
+{
+    $courseIds = CoursePayment::where('student_id', auth()->id())
+        ->where('status', 'success')
+        ->pluck('course_id');
+
+    $courses = Course::whereIn('id', $courseIds)->get();
+
+    return view('student.my-courses', compact('courses'));
+}
+
+
+public function showCourseActivities($id) {
+    $course = Course::findOrFail($id);
+
+    // ensure student has paid
+    $hasPaid = CoursePayment::where('student_id', auth()->id())
+        ->where('course_id', $id)
+        ->where('status', 'success')
+        ->exists();
+
+    if (! $hasPaid) {
+        return redirect()->route('student.my-courses')
+            ->with('error', 'You must pay for this course to see activities.');
+    }
+
+    $activities = $course->activities()->orderBy('activity_date')->get();
+
+    return view('student.course-activities', compact('course', 'activities'));
+}
+
+
+
+
 public function postComment(Request $request, $id)
 {
     $request->validate([

@@ -23,6 +23,11 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('school.activities') }}" class="nav-link">
+                        Events
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('school.courses.manage') }}" class="nav-link">
                         Badges
                     </a>
