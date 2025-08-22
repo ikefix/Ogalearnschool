@@ -152,8 +152,8 @@
             </div>
 
             <div class="gain">
-                <h1>All-in-one learning experience</h1>
-                <p>Here's how The Programmers works: most-updated curriculums, responsive mentoring and career guidance. You'll also get skills all delivered in a 100% online program.</p>
+                <h1>Your Complete Path to Mastery</h1>
+                <p>At Ogalearn, we believe in a holistic approach to learning. Our platform is designed to guide you through every step of your educational journey, ensuring you gain the skills and knowledge needed to excel in your career.</p>
                 <div class="gain-container">
                     <div class="gain-imgage">
                         <img src="{{ asset('portrait-person-promoting-marketing-campaign-removebg-preview.png') }}" alt="All-in-one learning experience">
