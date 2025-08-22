@@ -162,16 +162,16 @@
                         <h1>What you'll gain</h1>
                         <div class="gain-text-all">
                             <div>
-                                <span><h4>Fast-Paced Learning:</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, libero officiis. Iusto adipisci exercitationem totam eum rem! Quo, minima deserunt ducimus, delectus iure sit neque magnam dolore quaerat mollitia illo?</span>
+                                <span><h4>Build Real world Projects:</h4> At Ogalearn, you won’t just watch tutorials — you’ll build real-world projects like blogs, e-commerce stores, and portfolios. Every lesson is hands-on, and by the time you graduate, you’ll have a portfolio of practical projects that prove your skills and make you job-ready</span>
                             </div>
                             <div>
-                                <span><h4>Fast-Paced Learning:</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, libero officiis. Iusto adipisci exercitationem totam eum rem! Quo, minima deserunt ducimus, delectus iure sit neque magnam dolore quaerat mollitia illo?</span>
+                                <span><h4>Fast-Paced Learning:</h4> Our curriculum is designed to get you job-ready as quickly as possible. We focus on the most relevant skills and technologies, so you can start your career without unnecessary delays.</span>
                             </div>
                             <div>
-                                <span><h4>Fast-Paced Learning:</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, libero officiis. Iusto adipisci exercitationem totam eum rem! Quo, minima deserunt ducimus, delectus iure sit neque magnam dolore quaerat mollitia illo?</span>
+                                <span><h4>Expert Guidance:</h4> Our instructors are industry professionals with real-world experience. They provide personalized feedback and support to help you succeed.</span>
                             </div>
                         </div>
-                        <a href=""><button>Start Your Journey Now</button></a>
+                        <a href=""><button>Register to get started Now</button></a>
                     </div>
                 </div>
             </div>
