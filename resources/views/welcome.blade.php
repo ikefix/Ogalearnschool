@@ -108,7 +108,7 @@
                                 </div>
                                 <div>
                                     <h3>Register</h3>
-                                    <p>To be an account holder you have to open an account first.</p>
+                                    <p>Create your free account and get instant access to your personal student dashboard</p>
                                 </div>
                             </div>
                             <div class="join-con">
@@ -119,8 +119,8 @@
                                     <button>2</button>
                                 </div>
                                 <div>
-                                    <h3>Verification</h3>
-                                    <p>After registration you need to verify your Email and Mobile Number.</p>
+                                    <h3>Confirm Your Email</h3>
+                                    <p>Check your inbox for a confirmation link to activate your account.</p>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +133,8 @@
                                     <button>3</button>
                                 </div>
                                 <div>
-                                    <h3>Learning Account</h3>
-                                    <p>To be an account holder you have to open an account first.</p>
+                                    <h3>Choose Your Course & Pay</h3>
+                                    <p>From your dashboard, browse available courses, make payment, and start learning right away.</p>
                                 </div>
                             </div>
                             <div class="join-con">
