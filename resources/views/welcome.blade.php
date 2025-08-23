@@ -187,21 +187,21 @@
                                 <button style="color: purple;"><b>2</b></button>
                             </div>
                         </div>
-                        <div>
+                        {{-- <div>
                             <h3 class="about-us">Why Choose Us</h3>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="about-text">
                         <div class="we">
-                            <b><p class="otp-title">We Offer Qualified Courses And Adequate Teaching</p></b>
-                            <p class="spend">Save it, spend it, send it. It's up to you. Whatever you choose to do with your money, we'll make sure it's done better and free of charge.</p>
+                            <b><p class="otp-title">At the End of the Program Certificate of completion will be awarded</p></b>
+                            <p class="spend">This certificate will serve as a testament to your hard work and dedication.</p>
                         </div>
                         <div>
                             <hr class="dive">
                         </div>
                         <div class="otp-chid">
-                            <b><p class="otp-title">Qualified Certificates</p></b>
-                            <p class="otp">The OTP is a randomly generated code that is sent to your phone or email. You will need to enter this code in order to confirm your transaction.</p>
+                            <b><p class="otp-title">Earn a Recognized Certificate </p></b>
+                            <p class="otp">After completing your course, you’ll receive a digital certificate you can share with employers, add to your CV, or post on LinkedIn.</p>
                         </div>
                         <div class="learn">
                             <a href="{{ route('learn.with.ogalearn') }}">
