@@ -142,8 +142,8 @@
                                     <button>4</button>
                                 </div>
                                 <div>
-                                    <h3></h3>
-                                    <p>To be an account holder you have to open an account first.</p>
+                                    <h3>Start Learning</h3>
+                                    <p>Dive into interactive lessons, real-world projects, and track your progress from your dashboard.</p>
                                 </div>
                             </div>
                         </div>
