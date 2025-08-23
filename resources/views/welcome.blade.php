@@ -142,7 +142,7 @@
                                     <button>4</button>
                                 </div>
                                 <div>
-                                    <h3>Open An Account</h3>
+                                    <h3></h3>
                                     <p>To be an account holder you have to open an account first.</p>
                                 </div>
                             </div>
