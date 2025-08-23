@@ -227,63 +227,103 @@
                         <div class="cou-menu">
                             <div class="cou-men-flex">
                                  <a>
-        <div>
-            <div class="cou-menu-con">
-                <div><img src="{{ asset('WhatsApp Image 2024-03-23 at 9.47.58 AM (2).jpg') }}" alt="Image"></div>
-                <div class="course-topic">
-                    <h3 class="topy">Summer Holiday Training</h3>
-                    <h2 class="noty">Earn A Degree</h2>
-                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                </div>
+                                    <div>
+                                        <div class="cou-menu-con">
+                                            <div><img src="{{ asset('person-front-computer-working-html.jpg') }}" alt="Image"></div>
+                                            <div class="course-topic">
+                                                <h3 class="topy">Full Stack Development</h3>
+                                                <h2 class="noty">Earn A Degree</h2>
+                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                            </div>
 
-                <div class="see-more" style="display:none;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
-                </div>
-                
-                <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
-            </div>
-        </div>
-    </a>
+                                            <div class="see-more" style="display:none;">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                            </div>
+                                            
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                        </div>
+                                    </div>
+                                </a>
 
-    <!-- Card 2 -->
-    <a>
-        <div>
-            <div class="cou-menu-cen">
-                <div><img src="{{ asset('WhatsApp Image 2025-07-18 at 10.22.18.jpeg') }}" alt="Image"></div>
-                <div class="course-topic">
-                    <h3 class="topy">Data Analytics</h3>
-                    <h2 class="noty">Earn A Degree</h2>
-                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                </div>
+                                <!-- Card 2 -->
+                                <a>
+                                    <div>
+                                        <div class="cou-menu-cen">
+                                            <div><img src="{{ asset('20892632.jpg') }}" alt="Image"></div>
+                                            <div class="course-topic">
+                                                <h3 class="topy">Front End Development</h3>
+                                                <h2 class="noty">Earn A Degree</h2>
+                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                            </div>
 
-                <div class="see-more" style="display:none;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
-                </div>
-                
-                <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
-            </div>
-        </div>
-    </a>
+                                            <div class="see-more" style="display:none;">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                            </div>
+                                            
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                        </div>
+                                    </div>
+                                </a>
 
-    <!-- Card 3 -->
-    <a>
-        <div>
-            <div class="cou-menu-can">
-                <div><img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="Image"></div>
-                <div class="course-topic">
-                    <h3 class="topy">Digital Marketing</h3>
-                    <h2 class="noty">Earn A Degree</h2>
-                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                </div>
+                                <!-- Card 3 -->
+                                <a>
+                                    <div>
+                                        <div class="cou-menu-can">
+                                            <div><img src="{{ asset('computer-programming-coding-background_840382-42.png') }}" alt="Image"></div>
+                                            <div class="course-topic">
+                                                <h3 class="topy">Back End Development</h3>
+                                                <h2 class="noty">Earn A Degree</h2>
+                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                            </div>
 
-                <div class="see-more" style="display:none;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
-                </div>
-                
-                <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
-            </div>
-        </div>
-    </a>
+                                            <div class="see-more" style="display:none;">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                            </div>
+                                            
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 4 -->
+                                <a>
+                                    <div>
+                                        <div class="cou-menu-can">
+                                            <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image"></div>
+                                            <div class="course-topic">
+                                                <h3 class="topy">Graphics Design</h3>
+                                                <h2 class="noty">Earn A Degree</h2>
+                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                            </div>
+
+                                            <div class="see-more" style="display:none;">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                            </div>
+                                            
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 5 -->
+                                <a>
+                                    <div>
+                                        <div class="cou-menu-can">
+                                            <div><img src="{{ asset('employee.png') }}" alt="Image"></div>
+                                            <div class="course-topic">
+                                                <h3 class="topy">Data Analysis</h3>
+                                                <h2 class="noty">Earn A Degree</h2>
+                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                            </div>
+
+                                            <div class="see-more" style="display:none;">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                            </div>
+                                            
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             {{-- <div class="cou-men-flex">
                                 <a>
@@ -505,19 +545,94 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="Image 1" class="carousel-img">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">John Doe</h4>
+                    <small style="color:#888;">Student, Web Development</small>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('WhatsApp Image 2023-12-29 at 5.42.27 AM (2).jpg') }}" alt="Image 2" class="carousel-img">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Klissic Garri</h4>
+                    <small style="color:#888;">Student, Garri 4 life</small>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (2).jpeg') }}" alt="Image 3" class="carousel-img">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Goodluck Garri</h4>
+                    <small style="color:#888;">Student, Web Development</small>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('WhatsApp Image 2025-07-18 at 10.22.18.jpeg') }}" alt="Image 4" class="carousel-img">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Esther trouble</h4>
+                    <small style="color:#888;">Student, Mavis Bitcoin</small>
+                </div>
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('WhatsApp Image 2024-03-23 at 9.47.58 AM (2).jpg') }}" alt="Image 5" class="carousel-img">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Mr Love</h4>
+                    <small style="color:#888;">Developer, Web Developer</small>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Op Kingz Garri</h4>
+                    <small style="color:#888;">Student, Web Development</small>
+                </div>
             </div>
         </div>
 
@@ -526,7 +641,7 @@
         <div class="swiper-button-prev"></div>
 
         <!-- Pagination dots -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination" style="top: 14rem"></div>
     </div>
 </section>
 
@@ -544,23 +659,68 @@
                             <div class="cou-menu">
                                 <div class="hob-flex">
                                     <div class="go-flex1">
-                                        <div>
+                                        <div class="furth">
                                             <div class="job-img" data-popup="popup1">
-                                                <div class="down-down"><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                                <div class="down-down">
+                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <div class="furth-info">
+                                                        <h6 class="topy">Data Analysis</h6>
+                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div class="furth">
                                             <div class="job-img" data-popup="popup2">
-                                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                                <div>
+                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <div class="furth-info">
+                                                        <h6 class="topy">Data Analysis</h6>
+                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div class="furth">
                                             <div class="job-img" data-popup="popup3">
-                                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                                <div>
+                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <div class="furth-info">
+                                                        <h6 class="topy">Data Analysis</h6>
+                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="furth">
+                                            <div class="job-img" data-popup="popup4">
+                                                <div>
+                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <div class="furth-info">
+                                                        <h6 class="topy">Data Analysis</h6>
+                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="furth">
+                                            <div class="job-img" data-popup="popup5">
+                                                <div>
+                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <div class="furth-info">
+                                                        <h6 class="topy">Data Analysis</h6>
+                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="go-flex2">
+                                    {{-- <div class="go-flex2">
                                         <div>
                                             <div class="job-img" data-popup="popup4">
                                                 <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
@@ -576,7 +736,7 @@
                                                 <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
