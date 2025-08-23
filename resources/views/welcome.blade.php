@@ -94,7 +94,7 @@
             <div class="join">
                 <div class="join-content">
                     <div class="join-tent1">
-                        <h3 class="h2">How To Join</h3>
+                        <h3 class="h2">How to Join Ogalearn</h3>
                         <h2 class="easy">It's Easy To Join And Learn With Us</h2>
                     </div>
                     <div class="join-tent2">
