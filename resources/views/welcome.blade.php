@@ -72,22 +72,42 @@
                 </div>
             </div> --}}
             
-            <div class="about">
-                <div class="about-content">
-                    <div class="about-img">
-                        <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="">
-                    </div>
-                    <div class="about-text">
-                        <div class="hold1"><h3 class="h2">About Us</h3></div>
-                        <div class="hold2"><h2>We Care About The Quality Of Knowledge That Is Being Inculcated To Our Students.</h2></div>
-                        <div class="about-button">
-                            <div class="but1"><a href=""><button>OUR GOAL</button></a></div>
-                            <div class="but2"><a href=""><button>OUR VISION</button></a></div>
-                            <div class="but3"><a href=""><button>OUR MISSION</button></a></div>
+            <div class="about" style="padding: 60px 20px; background: #f9f9f9;">
+                <div class="about-content" style="display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+
+                    <!-- Text Side -->
+                    <div class="about-text" style="flex: 1; min-width: 300px;">
+                        {{-- <h3 style="font-size: 24px; color: #333; margin-bottom: 10px;">About Us</h3> --}}
+                        <h2 style="font-size: 32px; color: #111; margin-bottom: 20px;">
+                            We Inspire, Educate and Empower Students.
+                        </h2>
+                        <p style="font-size: 18px; line-height: 1.6; color: #555;">
+                            Our mission is to provide world-class education to students across Africa and beyond, 
+                            equipping them with the right knowledge and skills to dominate in their various fields.
+                        </p>
+                        <div style="margin-top: 20px;">
+                            <a href="#course-scroll">
+                                <button style="padding: 12px 25px; background: #007bff; border: none; border-radius: 5px; color: #fff; font-size: 16px; cursor: pointer;">
+                                    Explore Our Courses
+                                </button>
+                            </a>
                         </div>
-                        <div class="but4"><p>Our goal is to produce over 10,000 quality Tallent that will dominate Africa and beyond by 2030 </p></div>
-                        <div class="explore"><a href="#course-scroll"><button>Explore Our Courses</button></a></div>
                     </div>
+
+                    <!-- Video Side -->
+                    <div class="about-video" style="flex: 1; min-width: 300px;">
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; box-shadow: 0px 5px 20px rgba(0,0,0,0.2);">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/WPtIPbY7o50" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            </iframe>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -312,6 +332,26 @@
                                             <div><img src="{{ asset('employee.png') }}" alt="Image"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Data Analysis</h3>
+                                                <h2 class="noty">Earn A Degree</h2>
+                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                            </div>
+
+                                            <div class="see-more" style="display:none;">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                            </div>
+                                            
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- Card 4 -->
+                                <a>
+                                    <div>
+                                        <div class="cou-menu-can">
+                                            <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image"></div>
+                                            <div class="course-topic">
+                                                <h3 class="topy">Computer Appreciation</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
                                                 <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                             </div>

@@ -37,6 +37,13 @@ Route::get('/', function () {
 Auth::routes();
 
 
+Route::get('reset-password/{token}', [NewPasswordController::class, 'create'])
+    ->name('password.reset');
+
+Route::post('reset-password', [NewPasswordController::class, 'store'])
+    ->name('password.update');
+
+
 
     // Chat Room
     Route::get('/student/chat-room', function () {

@@ -8,18 +8,12 @@ use Illuminate\Notifications\Notifiable;
 use App\Models\CoursePayment;
 use App\Models\Course;
 use Laravel\Sanctum\HasApiTokens;
-use App\Notifications\CustomResetPassword;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
 
-
-public function sendPasswordResetNotification($token)
-{
-    $this->notify(new CustomResetPassword($token));
-}
     /**
      * The attributes that are mass assignable.
      *
