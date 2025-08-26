@@ -79,7 +79,7 @@
                     <div class="about-text" style="flex: 1; min-width: 300px;">
                         {{-- <h3 style="font-size: 24px; color: #333; margin-bottom: 10px;">About Us</h3> --}}
                         <h2 style="font-size: 32px; color: #111; margin-bottom: 20px;">
-                            We Inspire, Educate and Empower Students.
+                           Shaping Africa’s Next Generation of Innovators
                         </h2>
                         <p style="font-size: 18px; line-height: 1.6; color: #555;">
                         Ogalearn is an online Academy designed to take students from beginner to 
