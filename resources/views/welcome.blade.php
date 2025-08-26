@@ -214,19 +214,21 @@
                     </div>
                     <div class="about-text">
                         <div class="we">
-                            <b><p class="otp-title">At the End of the Program Certificate of completion will be awarded</p></b>
-                            <p class="spend">This certificate will serve as a testament to your hard work and dedication.</p>
+                            <b><p class="otp-title">Earn a Recognized Certificate</p></b>
+                            <p class="spend">At the end of your program, you’ll be awarded a Certificate of Completion — a proof of your dedication and newly acquired skills. This digital certificate can be shared with employers, added to your CV,
+                                 or showcased on LinkedIn to boost your career opportunities.</p>
                         </div>
                         <div>
                             <hr class="dive">
                         </div>
                         <div class="otp-chid">
-                            <b><p class="otp-title">Earn a Recognized Certificate </p></b>
-                            <p class="otp">After completing your course, you’ll receive a digital certificate you can share with employers, add to your CV, or post on LinkedIn.</p>
+                            <b><p class="otp-title">Unlock New Opportunities </p></b>
+                            <p class="otp">Your certificate doesn’t just celebrate course completion—it opens doors. Use it to boost your credibility,
+                                 win client trust, or secure your next big role.</p>
                         </div>
                         <div class="learn">
                             <a href="{{ route('learn.with.ogalearn') }}">
-                                <button>Learn With <i>Ogalearn</i></button>
+                                <button>Register</button>
                             </a>
 
                         </div>
