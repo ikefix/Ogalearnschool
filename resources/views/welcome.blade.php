@@ -82,8 +82,9 @@
                             We Inspire, Educate and Empower Students.
                         </h2>
                         <p style="font-size: 18px; line-height: 1.6; color: #555;">
-                            Our mission is to provide world-class education to students across Africa and beyond, 
-                            equipping them with the right knowledge and skills to dominate in their various fields.
+                        Ogalearn is an online learning platform designed to take students from beginner to 
+                        professional level in software development and other in-demand skills. With hands-on projects, expert mentorship, and flexible online learning, we equip learners with practical knowledge to thrive in today’s tech-driven world. Our goal is simple—empower Africa’s 
+                        next generation of innovators and problem-solvers.
                         </p>
                         <div style="margin-top: 20px;">
                             <a href="#course-scroll">
