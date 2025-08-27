@@ -280,13 +280,7 @@
 
                                             <div class="see-more" style="display:none;">
                                                 <p>What you will learn</p>
-                                                <ul>
-                                                    <li>HTML, CSS & JavaScript essentials</li>
-                                                    <li>Responsive and mobile-first design</li>
-                                                    <li>Modern frameworks (React)</li>
-                                                    <li>Building real-world projects</li>
-                                                </ul>
-                                            
+                                            </div>
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
                                         </div>
                                     </div>
