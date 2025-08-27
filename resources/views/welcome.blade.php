@@ -244,7 +244,7 @@
                 <div class="course-content">
                     <div class="center">
                         <h3 class="course-head">Courses</h3>
-                        <h2 class="offer">Start learning with free courses</h2>
+                        {{-- <h2 class="offer">Start learning with free courses</h2> --}}
                     </div>
                     <div class="course-menu">
                         <div class="cou-menu">
@@ -275,8 +275,7 @@
                                             <div><img src="{{ asset('20892632.jpg') }}" alt="Image"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Front End Development</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                <p>Master the art of building beautiful, responsive, and user-friendly websites. In this course, you’ll learn HTML, CSS, JavaScript, and modern frameworks to bring ideas to life on the web. By the end, you’ll be able to design interfaces that engage users and deliver seamless digital experiences.</p>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
