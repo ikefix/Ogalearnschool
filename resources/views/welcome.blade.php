@@ -279,8 +279,13 @@
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
-                                            </div>
+                                                <p>What you will learn</p>
+                                                <ul>
+                                                    <li>HTML, CSS & JavaScript essentials</li>
+                                                    <li>Responsive and mobile-first design</li>
+                                                    <li>Modern frameworks (React)</li>
+                                                    <li>Building real-world projects</li>
+                                                </ul>
                                             
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
                                         </div>
