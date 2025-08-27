@@ -260,7 +260,19 @@
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                                <p>Frontend foundations: HTML, CSS, JavaScript & modern frameworks (React, Vue, or Angular)
+
+Backend programming with Node.js, PHP (Laravel), or Python (Django/Flask)
+
+RESTful APIs & authentication systems
+
+Database design and management (SQL & NoSQL)
+
+Version control with Git & GitHub
+
+Deploying and scaling applications for real-world use
+
+By the end of the program, you’ll be able to design, build, and launch fully functional web applications—ready to showcase in your portfolio.</p>
                                             </div>
                                             
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
