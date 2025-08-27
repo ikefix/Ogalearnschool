@@ -281,7 +281,7 @@
                                             <div class="see-more" style="display:none;">
                                                 <p>What you will learn</p>
                                             </div>
-                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
                                 </a>
@@ -301,7 +301,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
                                             </div>
                                             
-                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
                                 </a>
@@ -321,7 +321,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
                                             </div>
                                             
-                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
                                 </a>
@@ -341,7 +341,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
                                             </div>
                                             
-                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
                                 </a>
@@ -361,7 +361,7 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
                                             </div>
                                             
-                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read Me</button>
+                                            <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
                                 </a>
