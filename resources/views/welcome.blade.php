@@ -260,19 +260,7 @@
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Frontend foundations: HTML, CSS, JavaScript & modern frameworks (React, Vue, or Angular)
-
-Backend programming with Node.js, PHP (Laravel), or Python (Django/Flask)
-
-RESTful APIs & authentication systems
-
-Database design and management (SQL & NoSQL)
-
-Version control with Git & GitHub
-
-Deploying and scaling applications for real-world use
-
-By the end of the program, you’ll be able to design, build, and launch fully functional web applications—ready to showcase in your portfolio.</p>
+                                                <p></p>
                                             </div>
                                             
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
