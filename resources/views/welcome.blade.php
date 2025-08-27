@@ -293,8 +293,8 @@
                                             <div><img src="{{ asset('computer-programming-coding-background_840382-42.png') }}" alt="Image"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Back End Development</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                {{-- <h2 class="noty">Earn A Degree</h2> --}}
+                                                <p>Learn to power applications from behind the scenes. This course covers server-side programming, databases, APIs, and authentication systems. You’ll gain the skills to build scalable, secure, and high-performance applications that drive real-world products.</p>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
