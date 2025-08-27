@@ -255,8 +255,8 @@
                                             <div><img src="{{ asset('person-front-computer-working-html.jpg') }}" alt="Image"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Full Stack Development</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                {{-- <h2 class="noty">Earn A Degree</h2> --}}
+                                                <p>Become a complete developer by mastering both the front and back end of web applications. This course takes you from building beautiful user interfaces to powering them with robust server-side logic and databases.</p>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
