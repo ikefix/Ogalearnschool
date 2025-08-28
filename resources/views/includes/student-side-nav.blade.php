@@ -50,7 +50,7 @@
             </a>
         </li>
         <li>
-            <a href="{{ url('/student/communities') }}" class="nav-link">
+            <a href="{{ url('/student/community') }}" class="nav-link">
                 Communities
             </a>
         </li>

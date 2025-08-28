@@ -63,7 +63,7 @@
                     >
             @endif
             <a id="navbarDropdown" class="nav-link" href="#" role="button"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: black">
                     {{ Auth::user()->name }}
             </a>
         </div>

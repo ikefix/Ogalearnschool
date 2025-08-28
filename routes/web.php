@@ -457,3 +457,19 @@ Route::get('/student/course/{id}/activities', [ActivityController::class, 'showC
 
     Route::get('/student/my-courses', [ActivityController::class, 'myCourses'])
     ->name('student.my-courses');
+
+
+
+    Route::get('/student/certificates', function () {
+    return view('student.certificate');
+});
+
+    Route::get('/student/community', function () {
+    return view('student.community');
+});
+
+
+
+    Route::get('/school/community', function () {
+    return view('school.community');
+});
