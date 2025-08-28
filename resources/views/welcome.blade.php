@@ -215,7 +215,7 @@
                     <div class="about-text">
                         <div class="we">
                             <b><p class="otp-title">Earn a Recognized Certificate</p></b>
-                            <p class="spend">At the end of your program, you’ll be awarded a Certificate of Completion — a proof of your dedication and newly acquired skills. This digital certificate can be shared with employers, added to your CV,
+                            <p class="spend otp">At the end of your program, you’ll be awarded a Certificate of Completion — a proof of your dedication and newly acquired skills. This digital certificate can be shared with employers, added to your CV,
                                  or showcased on LinkedIn to boost your career opportunities.</p>
                         </div>
                         <div>
@@ -703,10 +703,10 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup1">
                                                 <div class="down-down">
-                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <img src="{{ asset('Bloommonie.png') }}" alt="Image">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Data Analysis</h6>
-                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <h6 class="topy">Bloommonie SAAS</h6>
+                                                        {{-- <h5 class="noty">Earn A Degree</h5> --}}
                                                         <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                                     </div>
                                                 </div>
@@ -715,10 +715,10 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup2">
                                                 <div>
-                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <img src="{{ asset('doums.png') }}" alt="Image">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Data Analysis</h6>
-                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <h6 class="topy">Real Estate</h6>
+                                                        {{-- <h5 class="noty">Earn A Degree</h5> --}}
                                                         <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                                     </div>
                                                 </div>
@@ -727,10 +727,10 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup3">
                                                 <div>
-                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <img src="{{ asset('clev.png') }}" alt="Image">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Data Analysis</h6>
-                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <h6 class="topy">Clev Dynamics</h6>
+                                                        {{-- <h5 class="noty">Earn A Degree</h5> --}}
                                                         <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                                     </div>
                                                 </div>
@@ -739,10 +739,10 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup4">
                                                 <div>
-                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <img src="{{ asset('joemax.png') }}" alt="Image">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Data Analysis</h6>
-                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <h6 class="topy">Joe Max</h6>
+                                                        {{-- <h5 class="noty">Earn A Degree</h5> --}}
                                                         <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                                     </div>
                                                 </div>
@@ -751,10 +751,10 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup5">
                                                 <div>
-                                                    <img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image">
+                                                    <img src="{{ asset('Emminent.png') }}" alt="Image">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Data Analysis</h6>
-                                                        <h5 class="noty">Earn A Degree</h5>
+                                                        <h6 class="topy">Emminent Strategies</h6>
+                                                        {{-- <h5 class="noty">Earn A Degree</h5> --}}
                                                         <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
                                                     </div>
                                                 </div>
@@ -786,80 +786,79 @@
             
                 <div id="popup1" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('Bloommonie.png') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
-                            <h1>Wills</h1>
+                            <h1>Ogalearn SAAS</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque cumque unde eaque, animi laudantium nobis, asperiores officiis eos ratione rem placeat magni repellat quas non tenetur accusamus. Veritatis, sit.</p>
                             <h2>Industry</h2>
-                            <p>Wills Tech Institute</p>
-                            <h2>Services We Provide</h2>
-                            <p>Digital Marketing<br>Web Design<br>Web Development</p>
-                            <a href=""><h2>Visit Website</h2></a>
+                            <p>SAAS</p>
+                            {{-- <h2>Services We Provide</h2>
+                            <p>Digital Marketing<br>Web Design<br>Web Development</p> --}}
+                            <a href="https://bloommonieclient90.store/" target="_blank"><h2>Visit Website</h2></a>
                         </div>
                     </div>
                     <button class="cancel-btn">&times;</button>
                 </div>
                 <div id="popup2" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('doums.png') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
-                            <h1>Sonia</h1>
+                            <h1>Domus Properties</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque cumque unde eaque, animi laudantium nobis, asperiores officiis eos ratione rem placeat magni repellat quas non tenetur accusamus. Veritatis, sit.</p>
                             <h2>Industry</h2>
-                            <p>Hair Dressing</p>
-                            <h2>Services We Provide</h2>
-                            <p>Installation Of Frontiers<br>Importation Of Vietnamise<br>Chizzy's Acrylic & Gel Nail's</p>
-                            <a href=""><h2>Visit Website</h2></a>
+                            <p>Real Estate Service</p>
+                            {{-- <h2>Services We Provide</h2>
+                            <p>Installation Of Frontiers<br>Importation Of Vietnamise<br>Chizzy's Acrylic & Gel Nail's</p> --}}
+                            <a href="https://domus.ng" target="_blank"><h2>Visit Website</h2></a>
                         </div>
                     </div>
                     <button class="cancel-btn">&times;</button>
                 </div>
                 <div id="popup3" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('clev.png') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
-                            <h1>Henschel</h1>
+                            <h1>Clev Dynamics</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque cumque unde eaque, animi laudantium nobis, asperiores officiis eos ratione rem placeat magni repellat quas non tenetur accusamus. Veritatis, sit.</p>
                             <h2>Industry</h2>
-                            <p>Architectural Services</p>
-                            <h2>Services We Provide</h2>
-                            <p>Digital Marketing<br>Web Design<br>Web Development</p>
-                            <a href=""><h2>Visit Website</h2></a>
+                            <p>Oil Servicing</p>
+                            {{-- <h2>Services We Provide</h2>
+                            <p>Digital Marketing<br>Web Design<br>Web Development</p> --}}
+                            <a href="https://clevdynamic.com/" target="_blank"><h2>Visit Website</h2></a>
                         </div>
                     </div>
                     <button class="cancel-btn">&times;</button>
                 </div>
                 <div id="popup4" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('joemax.png') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
-                            <h1>Sheyi</h1>
+                            <h1>Joemax</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque cumque unde eaque, animi laudantium nobis, asperiores officiis eos ratione rem placeat magni repellat quas non tenetur accusamus. Veritatis, sit.</p>
                             <h2>Industry</h2>
-                            <p>Pending</p>
-                            <h2>Services We Provide</h2>
-                            <p>Mini Militia Teaching<br>Player X<br>Boss</p>
-                            <a href=""><h2>Visit Website</h2></a>
+                            <p>Solar Installation</p>
+                            {{-- <h2>Services We Provide</h2>
+                            <p>Mini Militia Teaching<br>Player X<br>Boss</p> --}}
+                            <a href="#"><h2>Visit Website</h2></a>
                         </div>
                     </div>
                     <button class="cancel-btn">&times;</button>
                 </div>
                 <div id="popup5" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('Emminent.png') }}" alt=""></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Silver</h1>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque cumque unde eaque, animi laudantium nobis, asperiores officiis eos ratione rem placeat magni repellat quas non tenetur accusamus. Veritatis, sit.</p>
                             <h2>Industry</h2>
                             <p>Trading</p>
-                            <h2>Services We Provide</h2>
-                            <p>Buying & Selling Of Food Stuffs<br>Buying Biscuit<br>Mini Pablo</p>
-                            <a href=""><h2>Visit Website</h2></a>
+                            {{-- <h2>Services We Provide</h2>  --}}
+                            <a href="https://www.emminentstrategies.com" target="_blank"><h2>Visit Website</h2></a>
                         </div>
                     </div>
                     <button class="cancel-btn">&times;</button>
