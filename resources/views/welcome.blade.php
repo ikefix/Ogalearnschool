@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 <div class="about-img3">
-                    <img src="{{ asset('WhatsApp Image 2025-07-20 at 18.23.15 (1).jpeg') }}" alt="">
+                    <img src="{{ asset('certificate.png') }}" alt="">
                 </div>
             </div>
 
