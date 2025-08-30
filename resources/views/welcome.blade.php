@@ -252,7 +252,7 @@
                                  <a>
                                     <div>
                                         <div class="cou-menu-con">
-                                            <div><img src="{{ asset('person-front-computer-working-html.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('person-front-computer-working-html.jpg') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Full Stack Development</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
@@ -272,7 +272,7 @@
                                 <a>
                                     <div>
                                         <div class="cou-menu-cen">
-                                            <div><img src="{{ asset('20892632.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('20892632.jpg') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Front End Development</h3>
                                                 <p>Master the art of building beautiful, responsive, and user-friendly websites. In this course, you’ll learn HTML, CSS, JavaScript, and modern frameworks to bring ideas to life on the web. By the end, you’ll be able to design interfaces that engage users and deliver seamless digital experiences.</p>
@@ -290,7 +290,7 @@
                                 <a>
                                     <div>
                                         <div class="cou-menu-can">
-                                            <div><img src="{{ asset('computer-programming-coding-background_840382-42.png') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('computer-programming-coding-background_840382-42.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Back End Development</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
@@ -310,7 +310,7 @@
                                 <a>
                                     <div>
                                         <div class="cou-menu-can">
-                                            <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Graphics Design</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
@@ -330,7 +330,7 @@
                                 <a>
                                     <div>
                                         <div class="cou-menu-can">
-                                            <div><img src="{{ asset('employee.png') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('employee.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Data Analysis</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
@@ -350,7 +350,7 @@
                                 <a>
                                     <div>
                                         <div class="cou-menu-can">
-                                            <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Computer Appreciation</h3>
                                                 <h2 class="noty">Earn A Degree</h2>
@@ -411,7 +411,7 @@
                                     <a href="/Ogalearn-check.php">
                                         <div>
                                             <div class="cou-menu-con">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image" loading="lazy"></div>
                                                 <div class="course-topic">
                                                     <h3 class="topy">Data Analysis</h3>
                                                     <h2 class="noty">Earn A Degree</h2>
@@ -423,7 +423,7 @@
                                     <a href="/Ogalearn-check.php">
                                         <div>
                                             <div class="cou-menu-cen">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image" loading="lazy"></div>
                                                 <div class="course-topic">
                                                     <h3 class="topy">Data Analysis</h3>
                                                     <h2 class="noty">Earn A Degree</h2>
@@ -435,7 +435,7 @@
                                     <a href="/Ogalearn-check.php">
                                         <div>
                                             <div class="cou-menu-can">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image" loading="lazy"></div>
                                                 <div class="course-topic">
                                                     <h3 class="topy">Data Analysis</h3>
                                                     <h2 class="noty">Earn A Degree</h2>
@@ -449,7 +449,7 @@
                                     <a href="/Ogalearn-check.php">
                                         <div>
                                             <div class="cou-menu-con">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image" loading="lazy"></div>
                                                 <div class="course-topic">
                                                     <h3 class="topy">Data Analysis</h3>
                                                     <h2 class="noty">Earn A Degree</h2>
@@ -461,7 +461,7 @@
                                     <a href="/Ogalearn-check.php">
                                         <div>
                                             <div class="cou-menu-cen">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image" loading="lazy"></div>
                                                 <div class="course-topic">
                                                     <h3 class="topy">Data Analysis</h3>
                                                     <h2 class="noty">Earn A Degree</h2>
@@ -473,7 +473,7 @@
                                     <a href="/Ogalearn-check.php">
                                         <div>
                                             <div class="cou-menu-can">
-                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
+                                            <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image" loading="lazy"></div>
                                                 <div class="course-topic">
                                                     <h3 class="topy">Data Analysis</h3>
                                                     <h2 class="noty">Earn A Degree</h2>
@@ -713,7 +713,7 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup2">
                                                 <div>
-                                                    <img src="{{ asset('doums.png') }}" alt="Image">
+                                                    <img src="{{ asset('doums.png') }}" alt="Image" loading="lazy">
                                                     <div class="furth-info">
                                                         <h6 class="topy">Real Estate</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
@@ -725,7 +725,7 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup3">
                                                 <div>
-                                                    <img src="{{ asset('clev.png') }}" alt="Image">
+                                                    <img src="{{ asset('clev.png') }}" alt="Image" loading="lazy">
                                                     <div class="furth-info">
                                                         <h6 class="topy">Clev Dynamics</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
@@ -737,7 +737,7 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup4">
                                                 <div>
-                                                    <img src="{{ asset('joemax.png') }}" alt="Image">
+                                                    <img src="{{ asset('joemax.png') }}" alt="Image" loading="lazy">
                                                     <div class="furth-info">
                                                         <h6 class="topy">Joe Max</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
@@ -749,7 +749,7 @@
                                         <div class="furth">
                                             <div class="job-img" data-popup="popup5">
                                                 <div>
-                                                    <img src="{{ asset('Emminent.png') }}" alt="Image">
+                                                    <img src="{{ asset('Emminent.png') }}" alt="Image" loading="lazy">
                                                     <div class="furth-info">
                                                         <h6 class="topy">Emminent Strategies</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
@@ -784,7 +784,7 @@
             
                 <div id="popup1" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('Bloommonie.png') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('Bloommonie.png') }}" alt="" loading="lazy"></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Ogalearn SAAS</h1>
@@ -800,7 +800,7 @@
                 </div>
                 <div id="popup2" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('doums.png') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('doums.png') }}" alt="" loading="lazy"></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Domus Properties</h1>
@@ -816,7 +816,7 @@
                 </div>
                 <div id="popup3" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('clev.png') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('clev.png') }}" alt="" loading="lazy"></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Clev Dynamics</h1>
@@ -832,7 +832,7 @@
                 </div>
                 <div id="popup4" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('joemax.png') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('joemax.png') }}" alt="" loading='lazy'></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Joemax</h1>
@@ -848,7 +848,7 @@
                 </div>
                 <div id="popup5" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('Emminent.png') }}" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="{{ asset('Emminent.png') }}" alt="" loading="lazy"></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Silver</h1>
@@ -863,7 +863,7 @@
                 </div>
                 <div id="popup6" class="popup-content">
                     <div class="popo">
-                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt=""></div>
+                        <div class="popo-con1"><img class="pop-shift" src="assets/Fidelity-bank-plc-building-financial.webp" alt="" loading="lazy"></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
                             <h1>Samuel</h1>
