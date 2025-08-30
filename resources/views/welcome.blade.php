@@ -589,15 +589,30 @@
                 <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
                     <!-- Person's remarks -->
                     <p style="font-style:italic; color:#555; margin-bottom:15px;">
-                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                       "Ogalearn gave me the confidence and skills to build complete websites from scratch. The hands-on projects made learning practical and exciting."
                     </p>
                     <!-- Rating stars -->
                     <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
                         ★ ★ ★ ★ ☆
                     </div>
                     <!-- Person giving testimony -->
-                    <h4 style="margin:0; font-weight:bold; color:#333;">John Doe</h4>
-                    <small style="color:#888;">Student, Web Development</small>
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Carl Uchenna</h4>
+                    <small style="color:#888;">Fullstack Web Development</small>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
+                    <!-- Person's remarks -->
+                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
+                        "Ogalearn’s Fullstack Web Development program gave me the skills and confidence to build real websites and apps. I went from zero knowledge to landing freelance projects in just a few months!"
+                    </p>
+                    <!-- Rating stars -->
+                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
+                        ★ ★ ★ ★ ☆
+                    </div>
+                    <!-- Person giving testimony -->
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Daniel Vite</h4>
+                    <small style="color:#888;">Fullstack Web Development</small>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -611,68 +626,51 @@
                         ★ ★ ★ ★ ☆
                     </div>
                     <!-- Person giving testimony -->
-                    <h4 style="margin:0; font-weight:bold; color:#333;">Klissic Garri</h4>
-                    <small style="color:#888;">Student, Garri 4 life</small>
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Goodluck Amaechi</h4>
+                    <small style="color:#888;">student, Data Analysis</small>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
                     <!-- Person's remarks -->
                     <p style="font-style:italic; color:#555; margin-bottom:15px;">
-                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
-                    </p>
+                        "The Data Analytics course at Ogalearn was eye-opening. I learned how to analyze data and make meaningful insights using tools I never thought I could master."
                     <!-- Rating stars -->
                     <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
                         ★ ★ ★ ★ ☆
                     </div>
                     <!-- Person giving testimony -->
-                    <h4 style="margin:0; font-weight:bold; color:#333;">Goodluck Garri</h4>
-                    <small style="color:#888;">Student, Web Development</small>
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Esther Barine</h4>
+                    <small style="color:#888;">Data Analysis</small>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
                     <!-- Person's remarks -->
                     <p style="font-style:italic; color:#555; margin-bottom:15px;">
-                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
+                        "I transformed my creativity into professional design skills through Ogalearn. Now I create stunning designs with confidence."
                     </p>
                     <!-- Rating stars -->
                     <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
                         ★ ★ ★ ★ ☆
                     </div>
                     <!-- Person giving testimony -->
-                    <h4 style="margin:0; font-weight:bold; color:#333;">Esther trouble</h4>
-                    <small style="color:#888;">Student, Mavis Bitcoin</small>
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Agatha Okwuosa</h4>
+                    <small style="color:#888;">Student, Graphics Design</small>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
                     <!-- Person's remarks -->
                     <p style="font-style:italic; color:#555; margin-bottom:15px;">
-                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
-                    </p>
+                        "The Backend Development course at Ogalearn helped me master APIs, databases, and server-side programming. Now I can build powerful applications with ease."</p>
                     <!-- Rating stars -->
                     <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
                         ★ ★ ★ ★ ☆
                     </div>
                     <!-- Person giving testimony -->
-                    <h4 style="margin:0; font-weight:bold; color:#333;">Mr Love</h4>
-                    <small style="color:#888;">Developer, Web Developer</small>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="testimonial-card" style="max-width:400px; margin:auto; padding:20px; border:1px solid #ddd; border-radius:10px; background:#fff; box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
-                    <!-- Person's remarks -->
-                    <p style="font-style:italic; color:#555; margin-bottom:15px;">
-                        "This platform really helped me understand coding better. The lessons were easy to follow and very practical!"
-                    </p>
-                    <!-- Rating stars -->
-                    <div style="color:#FFD700; font-size:18px; margin-bottom:10px;">
-                        ★ ★ ★ ★ ☆
-                    </div>
-                    <!-- Person giving testimony -->
-                    <h4 style="margin:0; font-weight:bold; color:#333;">Op Kingz Garri</h4>
-                    <small style="color:#888;">Student, Web Development</small>
+                    <h4 style="margin:0; font-weight:bold; color:#333;">Aregbesola Atere</h4>
+                    <small style="color:#888;">Backend Developer</small>
                 </div>
             </div>
         </div>
