@@ -177,7 +177,7 @@
                 <p>At Ogalearn, we believe in a holistic approach to learning. Our platform is designed to guide you through every step of your educational journey, ensuring you gain the skills and knowledge needed to excel in your career.</p>
                 <div class="gain-container">
                     <div class="gain-imgage">
-                        <img src="{{ asset('portrait-person-promoting-marketing-campaign-removebg-preview.png') }}" alt="All-in-one learning experience">
+                        <img src="{{ asset('portrait-person-promoting-marketing-campaign-removebg-preview.png') }}" alt="All-in-one learning experience" loading="lazy">
                     </div>
                     <div class="gain-text">
                         <h1>What you'll gain</h1>
@@ -235,7 +235,7 @@
                     </div>
                 </div>
                 <div class="about-img3">
-                    <img src="{{ asset('certificate.png') }}" alt="">
+                    <img src="{{ asset('certificate.png') }}" alt="" loading="lazy">
                 </div>
             </div>
 
@@ -252,7 +252,7 @@
                                  <a>
                                     <div>
                                         <div class="cou-menu-con">
-                                            <div><img src="{{ asset('person-front-computer-working-html.jpg') }}" alt="Image" loading="lazy"></div>
+                                            <div><img src="{{ asset('person-front-computer-working-html.jpg') }}" alt="Image" ></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Full Stack Development</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
@@ -260,7 +260,15 @@
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p></p>
+                                                <p><strong>Full Stack Development – What You’ll Learn</strong></p>
+                                                <ul>
+                                                    <li><strong>Front-End:</strong> HTML, CSS, JavaScript (ES6+), React, responsive design.</li>
+                                                    <li><strong>Back-End:</strong> Node.js/Express or PHP/Laravel, REST APIs, authentication.</li>
+                                                    <li><strong>Databases:</strong> MySQL, MongoDB, data modeling, ORM.</li>
+                                                    <li><strong>Tools:</strong> Git/GitHub, deployment (Heroku, Vercel, AWS).</li>
+                                                    <li><strong>Advanced:</strong> Security, testing, performance optimization, real-time apps.</li>
+                                                    <li><strong>Capstone Project:</strong> Build and deploy a complete full stack web application.</li>
+                                                </ul>
                                             </div>
                                             
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
@@ -279,7 +287,15 @@
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>What you will learn</p>
+                                                <p><strong>Front-End Development – What You’ll Learn</strong></p>
+                                                    <ul>
+                                                        <li><strong>HTML:</strong> Structure web pages with semantic markup.</li>
+                                                        <li><strong>CSS:</strong> Style layouts using Flexbox, Grid, and responsive design.</li>
+                                                        <li><strong>JavaScript:</strong> Add interactivity with ES6+, DOM manipulation, and events.</li>
+                                                        <li><strong>Frameworks:</strong> Learn React (components, state, hooks) or similar modern libraries.</li>
+                                                        <li><strong>UI/UX:</strong> Best practices for user-friendly and accessible design.</li>
+                                                        <li><strong>Projects:</strong> Build responsive websites and interactive web applications.</li>
+                                                    </ul>
                                             </div>
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
@@ -298,7 +314,16 @@
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                                <p><strong>Back-End Development – What You’ll Learn</strong></p>
+                                                    <ul>
+                                                        <li><strong>Server-Side Programming:</strong> Build applications with Node.js/Express or PHP/Laravel.</li>
+                                                        <li><strong>APIs:</strong> Create and consume RESTful APIs for data exchange.</li>
+                                                        <li><strong>Databases:</strong> Work with MySQL and MongoDB, design schemas, and use ORM tools.</li>
+                                                        <li><strong>Authentication:</strong> Implement login systems with JWT, OAuth, and role-based access.</li>
+                                                        <li><strong>Security:</strong> Protect applications with best practices for data validation and encryption.</li>
+                                                        <li><strong>Deployment:</strong> Host and manage apps on platforms like Heroku, AWS, or cPanel.</li>
+                                                        <li><strong>Projects:</strong> Develop and deploy scalable back-end applications.</li>
+                                                    </ul>
                                             </div>
                                             
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
@@ -313,14 +338,21 @@
                                             <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Graphics Design</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                {{-- <h2 class="noty">Earn A Degree</h2> --}}
+                                            <p>Become a creative professional by mastering the principles and tools of graphic design. This course takes you from design fundamentals to creating stunning visuals, brand identities, and digital assets that captivate audiences and bring ideas to life.</p>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                                            <p><strong>Graphics Design – What You’ll Learn</strong></p>
+                                                            <ul>
+                                                                <li><strong>Design Fundamentals:</strong> Learn color theory, typography, and layout principles.</li>
+                                                                <li><strong>Tools & Software:</strong> Master Adobe Photoshop, Illustrator, Canva, and other design tools.</li>
+                                                                <li><strong>Branding:</strong> Create logos, visual identities, and marketing materials.</li>
+                                                                <li><strong>UI/UX Basics:</strong> Design user-friendly interfaces for websites and apps.</li>
+                                                                <li><strong>Creative Projects:</strong> Work on posters, flyers, social media graphics, and digital ads.</li>
+                                                                <li><strong>Portfolio Building:</strong> Develop a professional portfolio to showcase your skills.</li>
+                                                            </ul>
                                             </div>
-                                            
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
@@ -333,14 +365,22 @@
                                             <div><img src="{{ asset('employee.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Data Analysis</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                {{-- <h2 class="noty">Earn A Degree</h2> --}}
+                                                <p>Become a data-driven professional by mastering the tools and techniques of data analytics. This course takes you from understanding data fundamentals to analyzing, visualizing, and interpreting insights that drive smarter decisions and business growth.</p>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
-                                            </div>
-                                            
+                                               <p><strong>Data Analytics – What You’ll Learn</strong></p>
+                                                    <ul>
+                                                        <li><strong>Data Fundamentals:</strong> Understand data types, collection methods, and structures.</li>
+                                                        <li><strong>Excel & Spreadsheets:</strong> Clean, organize, and analyze data efficiently.</li>
+                                                        <li><strong>SQL:</strong> Query databases to extract and manage data.</li>
+                                                        <li><strong>Data Visualization:</strong> Create charts, dashboards, and reports using tools like Power BI or Tableau.</li>
+                                                        <li><strong>Programming:</strong> Use Python (Pandas, NumPy, Matplotlib) for deeper analysis.</li>
+                                                        <li><strong>Statistics:</strong> Apply basic statistical methods for insights and predictions.</li>
+                                                        <li><strong>Projects:</strong> Work on real-world datasets to solve business problems.</li>
+                                                    </ul>
+                                            </div>               
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
@@ -353,14 +393,22 @@
                                             <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
                                                 <h3 class="topy">Computer Appreciation</h3>
-                                                <h2 class="noty">Earn A Degree</h2>
-                                                <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                {{-- <h2 class="noty">Earn A Degree</h2> --}}
+                                                <p>Learn the basics of using a computer and the internet. This course takes you from turning on a computer and using common software to browsing online, working with files, and staying safe while using digital tools.</p>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, architecto! Expedita delectus illo necessitatibus possimus quisquam rerum, voluptas, exercitationem neque consectetur, pariatur praesentium quidem tempore quia distinctio officiis nam non.</p>
+                                              <p>Computer Literacy – What You’ll Learn</p>
+                                                <ul>
+                                                <li>How to turn on and use a computer</li>
+                                                <li>Basic parts of a computer (keyboard, mouse, monitor)</li>
+                                                <li>Working with files and folders</li>
+                                                <li>Using common programs (Word, Excel, etc.)</li>
+                                                <li>Browsing the internet and using email</li>
+                                                <li>Online safety and protecting your information</li>
+                                                <li>Basic troubleshooting tips</li>
+                                                </ul>
                                             </div>
-                                            
                                             <button class="read-btn" onclick="toggleSeeMore(this)">Read More</button>
                                         </div>
                                     </div>
