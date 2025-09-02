@@ -1849,3 +1849,28 @@ body{
         border-radius: 4px;
         cursor: pointer;
     }
+
+.course-fee {
+    display: inline-block;
+    background: #f8f9fa;   /* light background */
+    border: 2px solid #007bff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.course-fee .old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-weight: normal;
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.course-fee .new-price {
+    color: #28a745; /* green */
+    font-weight: bold;
+    font-size: 15px;
+}
+

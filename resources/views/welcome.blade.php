@@ -395,6 +395,11 @@
                                                 <h3 class="topy">Computer Literacy</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
                                                 <p>Learn the basics of using a computer and the internet. This course takes you from turning on a computer and using common software to browsing online, working with files, and staying safe while using digital tools.</p>
+                                                <!-- Course Fee Box -->
+                                                <div class="course-fee">
+                                                    <span class="old-price">₦20,000</span> 
+                                                    <span class="new-price">₦15,000</span>
+                                                </div>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
