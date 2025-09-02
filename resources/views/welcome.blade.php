@@ -392,7 +392,7 @@
                                         <div class="cou-menu-can">
                                             <div><img src="{{ asset('graphic-design-log.png') }}" alt="Image" loading="lazy"></div>
                                             <div class="course-topic">
-                                                <h3 class="topy">Computer Appreciation</h3>
+                                                <h3 class="topy">Computer Literacy</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
                                                 <p>Learn the basics of using a computer and the internet. This course takes you from turning on a computer and using common software to browsing online, working with files, and staying safe while using digital tools.</p>
                                             </div>
