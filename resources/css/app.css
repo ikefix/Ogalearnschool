@@ -1851,26 +1851,56 @@ body{
     }
 
 .course-fee {
-    display: inline-block;
-    background: #0e5092;   /* light background */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
     border: 2px solid #007bff;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    margin-top: 10px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 10px auto; /* center horizontally */
 }
 
 .course-fee .old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-weight: normal;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
     margin-right: 8px;
-    font-size: 13px;
+}
+
+/* custom strike line */
+.course-fee .old-price::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 3px solid black;
+    transform: translateY(-50%);
 }
 
 .course-fee .new-price {
-    color: #580758; /* green */
+    color: white;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 }
 
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .course-fee {
+        font-size: 14px;
+        padding: 6px 12px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .course-fee .old-price {
+        font-size: 15px;
+    }
+
+    .course-fee .new-price {
+        font-size: 17px;
+    }
+}

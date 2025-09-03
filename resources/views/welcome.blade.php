@@ -257,6 +257,10 @@
                                                 <h3 class="topy">Full Stack Development</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
                                                 <p>Become a complete developer by mastering both the front and back end of web applications. This course takes you from building beautiful user interfaces to powering them with robust server-side logic and databases.</p>
+                                                <div class="course-fee">
+                                                    <span class="old-price">₦250,000</span> 
+                                                    <span class="new-price">₦120,000</span>
+                                                </div>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
@@ -284,6 +288,10 @@
                                             <div class="course-topic">
                                                 <h3 class="topy">Front End Development</h3>
                                                 <p>Master the art of building beautiful, responsive, and user-friendly websites. In this course, you’ll learn HTML, CSS, JavaScript, and modern frameworks to bring ideas to life on the web. By the end, you’ll be able to design interfaces that engage users and deliver seamless digital experiences.</p>
+                                                <div class="course-fee">
+                                                    <span class="old-price">₦250,000</span> 
+                                                    <span class="new-price">₦120,000</span>
+                                                </div>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
@@ -311,6 +319,10 @@
                                                 <h3 class="topy">Back End Development</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
                                                 <p>Learn to power applications from behind the scenes. This course covers server-side programming, databases, APIs, and authentication systems. You’ll gain the skills to build scalable, secure, and high-performance applications that drive real-world products.</p>
+                                                <div class="course-fee">
+                                                    <span class="old-price">₦250,000</span> 
+                                                    <span class="new-price">₦120,000</span>
+                                                </div>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
@@ -340,6 +352,10 @@
                                                 <h3 class="topy">Graphics Design</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
                                             <p>Become a creative professional by mastering the principles and tools of graphic design. This course takes you from design fundamentals to creating stunning visuals, brand identities, and digital assets that captivate audiences and bring ideas to life.</p>
+                                                <div class="course-fee">
+                                                    <span class="old-price">₦250,000</span> 
+                                                    <span class="new-price">₦120,000</span>
+                                                </div>
                                             </div>
 
                                             <div class="see-more" style="display:none;">
@@ -367,8 +383,11 @@
                                                 <h3 class="topy">Data Analysis</h3>
                                                 {{-- <h2 class="noty">Earn A Degree</h2> --}}
                                                 <p>Become a data-driven professional by mastering the tools and techniques of data analytics. This course takes you from understanding data fundamentals to analyzing, visualizing, and interpreting insights that drive smarter decisions and business growth.</p>
+                                                <div class="course-fee">
+                                                    <span class="old-price">₦250,000</span> 
+                                                    <span class="new-price">₦120,000</span>
+                                                </div>
                                             </div>
-
                                             <div class="see-more" style="display:none;">
                                                <p><strong>Data Analytics – What You’ll Learn</strong></p>
                                                     <ul>
@@ -401,7 +420,6 @@
                                                     <span class="new-price">₦15,000</span>
                                                 </div>
                                             </div>
-
                                             <div class="see-more" style="display:none;">
                                               <p>Computer Literacy – What You’ll Learn</p>
                                                 <ul>
