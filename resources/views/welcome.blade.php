@@ -538,102 +538,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ðŸ‘‡ SHOW MORE BUTTON -->
-                            <div class="more-course">
-                                <a class="shomo" id="shomo">
-                                    {{-- <button id="shomo-button">Show More</button> --}}
-                                </a>
-                            </div>
                     </div>
                 </div>
             </div>
 
-
-
-            {{-- <div class="services">
-                <div class="services-content">
-                    <div class="service-tent1">
-                        <h3>Services</h3>
-                        <h2>We Offer And Serve Quality Services</h2>
-                    </div>
-                    <div class="service-tent2">
-                        <div class="ser-tent">
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Web & Mobile App Development</h3>
-                                    <h2 class="noty">We Develop Websites</h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Graphics Design</h3>
-                                    <h2 class="noty">We Design Websites</h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Sales & Repairs Of Gadgets</h3>
-                                    <h2 class="noty">We Marketise Digitally </h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                        </div>
-                        {{-- <div class="ser-tent">
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Graphics Design</h3>
-                                    <h2 class="noty">We Design Websites</h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div> --}}
-                            
-                            {{-- <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Web Development</h3>
-                                    <h2 class="noty">We Develop And Create Website</h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ser-tent sert">
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Web Design</h3>
-                                    <h2 class="noty">We Design Websites</h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Digital Marketing</h3>
-                                    <h2 class="noty">We Marketise Digitally </h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                            <div class="service-tent-con">
-                                <div><img src="{{ asset('ui-ux-representations-with-laptop.jpg') }}" alt="Image"></div>
-                                <div class="service-topic">
-                                    <h3 class="topy">Web Development</h3>
-                                    <h2 class="noty">We Develop And Create Website</h2>
-                                    <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-button">
-                        {{-- <button id="view-more-btn">View More Services</button>
-                    </div>
-                </div>
-            </div> --}}
 
 <section class="image-slider-section py-4">
     <div class="swiper mySwiper">
