@@ -1852,7 +1852,7 @@ body{
 
 .course-fee {
     display: inline-block;
-    background: #f8f9fa;   /* light background */
+    background: #0e5092;   /* light background */
     border: 2px solid #007bff;
     padding: 6px 14px;
     border-radius: 20px;
@@ -1869,7 +1869,7 @@ body{
 }
 
 .course-fee .new-price {
-    color: #03095c; /* green */
+    color: #580758; /* green */
     font-weight: bold;
     font-size: 15px;
 }
