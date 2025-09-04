@@ -696,7 +696,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Real Estate</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                        <p>The Real Estate Listing Application was created to help property seekers easily browse through verified listings while enabling agents and property owners to showcase their properties in a secure and transparent way. Unlike traditional property advertising methods, this solution is digital, interactive, and accessible from anywhere, ensuring convenience for both buyers and sellers.</p>
                                                     </div>
                                                 </div>
                                             </div>
