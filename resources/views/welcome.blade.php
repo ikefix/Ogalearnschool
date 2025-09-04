@@ -684,7 +684,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Bloommonie SAAS</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>The Inventory Management SaaS Application was designed to help businesses—small, medium, and large—manage their products, stock levels, sales, and reports all in one platform. Unlike traditional offline inventory systems, this solution is cloud-based, meaning businesses can access their data anytime, anywhere, with secure login access.</p>
+                                                    <p>A cloud-based app for businesses to manage inventory, sales, and reports from anywhere.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -696,7 +696,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Real Estate</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>The Real Estate Listing Application was created to help property seekers easily browse through verified listings while enabling agents and property owners to showcase their properties in a secure and transparent way. Unlike traditional property advertising methods, this solution is digital, interactive, and accessible from anywhere, ensuring convenience for both buyers and sellers.</p>
+                                                        <p>A digital platform for agents to list properties and for buyers to find them easily anytime, anywhere.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -706,9 +706,9 @@
                                                 <div>
                                                     <img src="{{ asset('clev.png') }}" alt="Image" loading="lazy">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Clev Dynamics</h6>
+                                                        <h6 class="topy">Clevdynamic</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>The website was developed to help the company showcase its expertise, services, and portfolio in the highly competitive oil and gas sector. It serves as a professional online presence where potential clients can learn about the company’s capabilities, request services, and build trust through well-presented information. Unlike generic websites, this solution is industry-focused, responsive, and client-oriented, ensuring credibility and accessibility.</p>
+                                                        <p>The website was built to showcase the company’s NDT and Fabrication services, providing a professional online presence where clients can explore capabilities, view past projects, and make service inquiries. It is industry-focused, responsive, and client-oriented, designed to build trust and accessibility.</p>
                                                     </div>
                                                 </div>
                                             </div>
