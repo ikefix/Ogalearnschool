@@ -708,7 +708,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Clevdynamic</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>The website was built to showcase the company’s NDT and Fabrication services, providing a professional online presence where clients can explore capabilities, view past projects, and make service inquiries. It is industry-focused, responsive, and client-oriented, designed to build trust and accessibility.</p>
+                                                        <p>A responsive website showcasing the company’s NDT and Fabrication services to build trust and attract clients.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -718,9 +718,9 @@
                                                 <div>
                                                     <img src="{{ asset('joemax.png') }}" alt="Image" loading="lazy">
                                                     <div class="furth-info">
-                                                        <h6 class="topy">Joe Max</h6>
+                                                        <h6 class="topy">Joemaxx Global Services</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                        <p>A clean website highlighting the company’s solar and electrical services to showcase expertise and reach more clients.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -732,7 +732,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Emminent Strategies</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                        <p>A secure platform enabling users to make payments easily using cryptocurrency..</p>
                                                     </div>
                                                 </div>
                                             </div>
