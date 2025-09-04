@@ -708,7 +708,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Clev Dynamics</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                        <p>The website was developed to help the company showcase its expertise, services, and portfolio in the highly competitive oil and gas sector. It serves as a professional online presence where potential clients can learn about the company’s capabilities, request services, and build trust through well-presented information. Unlike generic websites, this solution is industry-focused, responsive, and client-oriented, ensuring credibility and accessibility.</p>
                                                     </div>
                                                 </div>
                                             </div>
