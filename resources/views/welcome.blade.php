@@ -670,7 +670,7 @@
                 <div class="job">
                     <div class="job-content">
                         <div class="center">
-                            <h3 class="course-head">Jobs</h3>
+                            {{-- <h3 class="course-head">Jobs</h3> --}}
                             <h2 class="offer">Our Student Projects</h2>
                         </div>
                         <div class="course-menu">

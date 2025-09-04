@@ -1025,8 +1025,8 @@ body{
 }
 
 .course-head {
-    font-size: 2rem;
-    color: var(--var-color);
+    font-size: 2.5rem;
+    color: black;
     margin-bottom: 10px;
 }
 
