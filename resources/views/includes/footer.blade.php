@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-column hola">
-            <h3>Ogalearn Digital Academy</h3><br>RC: 5423987
+            <h3>Ogalearn Digital Academy</h3><br>RC: 8588921
             <p class="footer-p">Your gateway to learning tech skills.Empowering Africa’s next generation of innovators and problem-solvers.</p>
         </div>
         <div class="footer-column">
