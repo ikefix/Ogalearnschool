@@ -684,7 +684,7 @@
                                                     <div class="furth-info">
                                                         <h6 class="topy">Bloommonie SAAS</h6>
                                                         {{-- <h5 class="noty">Earn A Degree</h5> --}}
-                                                        <p>Do you have a great idea but need help to turn it into a business? Find courses about necessary business and financial skills to build and run your own start-up.</p>
+                                                        <p>The Inventory Management SaaS Application was designed to help businesses—small, medium, and large—manage their products, stock levels, sales, and reports all in one platform. Unlike traditional offline inventory systems, this solution is cloud-based, meaning businesses can access their data anytime, anywhere, with secure login access.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -766,8 +766,8 @@
                         <div class="popo-con1"><img class="pop-shift" src="{{ asset('Bloommonie.png') }}" alt="" loading="lazy"></div>
                         <hr  style="border: solid #F0F2F5 0.1px; margin-top: 1rem;">
                         <div class="popo-con2">
-                            <h1>Ogalearn SAAS</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque cumque unde eaque, animi laudantium nobis, asperiores officiis eos ratione rem placeat magni repellat quas non tenetur accusamus. Veritatis, sit.</p>
+                            <h1>Saas Inventory Management System</h1>
+                            <p>The Inventory Management SaaS Application was designed to help businesses—small, medium, and large—manage their products, stock levels, sales, and reports all in one platform. Unlike traditional offline inventory systems, this solution is cloud-based, meaning businesses can access their data anytime, anywhere, with secure login access.</p>
                             <h2>Industry</h2>
                             <p>SAAS</p>
                             {{-- <h2>Services We Provide</h2>
