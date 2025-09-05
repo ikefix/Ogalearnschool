@@ -878,8 +878,16 @@
                 <!-- Right Side -->
                 <div class="faq-right">
                     <div class="faq-item">
-                        <div class="faq-question">Is Opening An Account Free?</div>
-                        <div class="faq-answer">Yes, creating an account is completely free. You can sign up and start using our services right away without paying any fees.</div>
+                        <div class="faq-question">What Makes Our Bootcamp Different?</div>
+                        <div class="faq-answer">
+                            <ul class="faq-list">
+                                <li><strong>One-on-One Mentorship:</strong> Personalized guidance and direct access to experienced mentors.</li>
+                                <li><strong>Expert Instructors:</strong> Learn from industry professionals with real-world experience.</li>
+                                <li><strong>Hands-On Projects:</strong> Work on real-world projects that build your portfolio.</li>
+                                <li><strong>Updated Curriculum:</strong> Stay ahead with content that matches current industry standards.</li>
+                                <li><strong>Career Support:</strong> Ongoing job placement assistance and career coaching to help you land opportunities.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="faq-item">

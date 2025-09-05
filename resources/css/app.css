@@ -1904,3 +1904,24 @@ body{
         font-size: 17px;
     }
 }
+.faq-list {
+    list-style: none; /* remove default bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.faq-list li::before {
+    content: "✔";  /* checkmark symbol */
+    position: absolute;
+    left: 0;
+    color: #1e90ff; /* blue checkmark */
+    font-weight: bold;
+}
