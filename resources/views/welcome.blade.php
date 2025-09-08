@@ -892,7 +892,15 @@
 
                     <div class="faq-item">
                         <div class="faq-question">Why Do I Need To Logout Every Time?</div>
-                        <div class="faq-answer">Logging out helps secure your account, especially on shared or public devices, and prevents unauthorized access.</div>
+                        <div class="faq-answer">Logging out helps secure your account, especially on shared or public devices, and prevents unauthorized access.
+                                <ul class="faq-list">
+                                    <li><strong>One-on-One Mentorship:</strong> Personalized guidance and direct access to experienced mentors.</li>
+                                    <li><strong>Expert Instructors:</strong> Learn from industry professionals with real-world experience.</li>
+                                    <li><strong>Hands-On Projects:</strong> Work on real-world projects that build your portfolio.</li>
+                                    <li><strong>Updated Curriculum:</strong> Stay ahead with content that matches current industry standards.</li>
+                                    <li><strong>Career Support:</strong> Ongoing job placement assistance and career coaching to help you land opportunities.</li>
+                                </ul> 
+                        </div>
                     </div>
 
                     <div class="faq-item">
