@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+z<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -885,37 +885,40 @@
                                 <li><strong>Expert Instructors:</strong> Learn from industry professionals with real-world experience.</li>
                                 <li><strong>Hands-On Projects:</strong> Work on real-world projects that build your portfolio.</li>
                                 <li><strong>Updated Curriculum:</strong> Stay ahead with content that matches current industry standards.</li>
-                                <li><strong>Career Support:</strong> Ongoing job placement assistance and career coaching to help you land opportunities.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="faq-item">
-                        <div class="faq-question">Why Do I Need To Logout Every Time?</div>
-                        <div class="faq-answer">Logging out helps secure your account, especially on shared or public devices, and prevents unauthorized access.
-                                <ul class="faq-list">
-                                    <li><strong>One-on-One Mentorship:</strong> Personalized guidance and direct access to experienced mentors.</li>
-                                    <li><strong>Expert Instructors:</strong> Learn from industry professionals with real-world experience.</li>
-                                    <li><strong>Hands-On Projects:</strong> Work on real-world projects that build your portfolio.</li>
-                                    <li><strong>Updated Curriculum:</strong> Stay ahead with content that matches current industry standards.</li>
-                                    <li><strong>Career Support:</strong> Ongoing job placement assistance and career coaching to help you land opportunities.</li>
-                                </ul> 
-                        </div>
+                        <div class="faq-question">Who can enroll in Ogalearn programs?</div>
+                        <div class="faq-answer">Ogalearn programs are open to anyone looking to enhance their skills, switch careers, or start a new journey in tech. Whether you're a beginner or an experienced professional, we have courses tailored for you.</div>
                     </div>
 
                     <div class="faq-item">
-                        <div class="faq-question">How To Open An Account?</div>
-                        <div class="faq-answer">Click on the "Sign Up" button, fill in the required details, and verify your email address to activate your account.</div>
+                        <div class="faq-question">How are Ogalearn courses different from free tutorials online?</div>
+                        <div class="faq-answer">Ogalearn courses offer a structured curriculum, expert mentorship, and hands-on projects that provide a comprehensive learning experience, unlike many free tutorials that may lack depth and support.</div>
                     </div>
 
                     <div class="faq-item">
-                        <div class="faq-question">I Forgot My Password?</div>
-                        <div class="faq-answer">Click on "Forgot Password" at the login page and follow the instructions to reset your password via email.</div>
+                        <div class="faq-question">Do I need prior tech knowledge to join?</div>
+                        <div class="faq-answer">No prior tech knowledge is required to join Ogalearn programs. Our courses are designed to cater to all skill levels, from beginners to advanced learners.</div>
                     </div>
 
                     <div class="faq-item">
-                        <div class="faq-question">How Much Percentage Will I Make A Year?</div>
-                        <div class="faq-answer">Your yearly percentage depends on the plan you choose. Please check our pricing and plan details for more information.</div>
+                        <div class="faq-question">How long does it take to complete a bootcamp?</div>
+                        <div class="faq-answer">The duration of a bootcamp can vary based on the program and your pace. Typically, our bootcamps range from a few weeks to several months. Please check the specific bootcamp details for more information.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Will I work on real projects?</div>
+                        <div class="faq-answer">Yes, our bootcamps emphasize hands-on experience. You'll work on real-world projects that help you build a strong portfolio and gain practical skills.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do you offer certificates?</div>
+                        <div class="faq-answer">Yes, upon successful completion of a bootcamp, you will receive a certificate that recognizes your achievement and skills gained during the program.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How can I get started?</div>
+                        <div class="faq-answer">To get started with Ogalearn, simply browse our available bootcamps and choose one that fits your goals. You can then enroll directly through our website. If you have any questions, our support team is here to help!</div>
                     </div>
                 </div>
             </div>
