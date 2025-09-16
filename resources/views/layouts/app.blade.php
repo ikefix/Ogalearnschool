@@ -28,6 +28,17 @@
         </main>
     </div>
 
+<!-- Floating WhatsApp Button -->
+<!-- Floating WhatsApp Button -->
+<!-- Font Awesome (must be loaded first) -->
+<a href="https://wa.me/2349152150124" target="_blank"
+   style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; font-size: 28px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); z-index: 1000;">
+   WA
+</a>
 
+
+<!-- Floating WhatsApp Button -->
+
+<!-- Select2 JS -->
 </body>
 </html>

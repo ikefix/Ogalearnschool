@@ -18,6 +18,7 @@ use App\Http\Controllers\School\SubmissionReviewController;
 use App\Http\Middleware\EnsureSubscribed;
 use App\Http\Controllers\ActivityController;
 use App\Events\EphemeralMessageEvent;
+use App\Http\Controllers\WhatsAppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -473,3 +474,4 @@ Route::get('/student/course/{id}/activities', [ActivityController::class, 'showC
     Route::get('/school/community', function () {
     return view('school.community');
 });
+Route::get('/send-whatsapp', [WhatsAppController::class, 'sendMessage']);

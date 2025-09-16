@@ -1099,5 +1099,36 @@ function toggleSeeMore(btn) {
     }
 }
 </script>
+<!-- Font Awesome (must be loaded once, preferably in <head>) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/2349152150124" target="_blank" id="whatsapp-float">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<style>
+#whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+}
+#whatsapp-float:hover {
+    background-color: #20b858;
+}
+</style>
+
+
     </body>
 </html>
